@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+    <link rel="stylesheet" href="css/singup.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- landing page  -->
+    <div class="landing_page">
+      <div class="w-100 h-100 position-relative">
+        <video
+          class="w-100 h-100 object-fit-cover"
+          src="assets/image/viedo.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+        <div class="lauoutVideo"></div>
+        <!-- mobile nav -->
+        <div class="mobileNav container-sm mx-auto d-block d-md-none">
+          <div class="row g-">
+            <!-- logo -->
+            <div class="col">
+              <img src="assets/image/Logo white.svg" alt="" />
+            </div>
+            <!-- menu bar -->
+            <div class="col">
+              <div class="menuIcon d-flex justify-content-end">
+                <i class="fa-solid fa-bars text-end show"></i>
+                <i class="fa-solid fa-xmark text-end"></i>
+              </div>
+              <div class="menuBox">
+                <ul class="row">
+                  <li>EN <i class="fa-solid fa-angle-down"></i></li>
+                  <li>Sign in</li>
+                  <li>Register</li>
+                  <li>Home</li>
+                  <li>Suites</li>
+                  <li>Dinning</li>
+                  <li>Gallery</li>
+                  <li><a href="Concierge.html"> Concierge</a></li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- destop nav -->
+        <div class="desktopNav row d-none d-md-block">
+          <div class="row">
+            <div class="col">
+              <img
+                height="54"
+                widt
+                h="146"
+                class="headerlogo"
+                src="assets/image/Logo white-desktop.svg"
+                alt=""
+              />
+            </div>
+            <div class="col-md-6 col-xl-5">
+              <div class="row gx-5 flex-nowrap">
+                <div class="col linksHeader">EN</div>
+                <div class="col linksHeader">Sing in</div>
+                <div class="col linksHeader">Register</div>
+                <div class="col">
+                  <div class="bookBut">
+                    <button>Book New</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- links desktop -->
+        <div class="linksDesktop w-100 d-none d-md-block">
+          <ul class="d-flex justify-content-center align-items-center gap-4">
+            <li>
+              <a>Home </a>
+              <i class="fa fa-angle-down"></i>
+            </li>
+            <li>
+              <a href="listSuites.html">Suites </a>
+            </li>
+            <li>
+              <a>Dinning </a>
+            </li>
+            <li>
+              <a>Gallery </a>
+            </li>
+            <li>
+              <a href="Concierge.html"> Concierge</a>
+            </li>
+            <li>
+              <a>Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- sign Up section  -->
+    <div class="container">
+      <div class="welcomeText mt-3">Welcome to Le Riad Hotel de Charme</div>
+      <div class="signUpSection p-3 mt-3 mt-md-4">
+        <div class="row gy-3">
+          <!-- frist name  -->
+          <div class="col-12 col-md-6 d-flex flex-column gap-2">
+            <div class="labalsignup">First Name</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="first Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <!-- last name  -->
+          <div class="col-12 col-md-6 d-flex flex-column gap-2">
+            <div class="labalsignup">last Name</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="last  Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <!-- countery  -->
+          <div class="col-12 col-md-6 d-flex flex-column gap-2">
+            <div class="labalsignup">country</div>
+            <select
+              class="form-select form-select-lg"
+              aria-label=".form-select-lg example"
+            >
+              <option selected>country</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <!-- code and number -->
+          <div class="col-12 col-md-6 d-flex flex-column gap-2">
+            <div class="labalsignup">Phone</div>
+            <div class="d-flex align-items-center">
+              <select
+                class="form-select code_selected"
+                aria-label="Default select example"
+              >
+                <option selected>code</option>
+                <option value="1">+1</option>
+                <option value="2">+20</option>
+                <option value="3">+23</option>
+                <option value="3">+43</option>
+                <option value="3">+80</option>
+              </select>
+              <input
+                class="form-control inputCode"
+                type="text"
+                placeholder="Number"
+                aria-label="Name example"
+              />
+            </div>
+          </div>
+          <!-- Email  -->
+          <div class="col-12 d-flex flex-column gap-2">
+            <div class="labalsignup">Email</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="Email"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <!-- Password  -->
+          <div class="col-12 col-md-6 d-flex flex-column gap-2">
+            <div class="labalsignup">Password</div>
+            <input
+              class="form-control form-control-lg"
+              type="password"
+              placeholder="Password"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <!-- Password confirmation  -->
+          <div class="col-12 col-md-6 d-flex flex-column gap-2">
+            <div class="labalsignup">Password Confirmation</div>
+            <input
+              class="form-control form-control-lg"
+              type="password"
+              placeholder="Password Confirmation"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <!-- Receive Our Newsletter -->
+          <div class="d-flex gap-3 align-content-center">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label labalCheck" for="flexCheckDefault">
+                Receive our newsletter
+              </label>
+            </div>
+          </div>
+          <div class="col-12 loginBut">
+            <button><a href="reserve.html"> Resister</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact us  -->
+    <div class="container">
+      <div class="headerSection pb-2">
+        <p>Contact Us</p>
+      </div>
+      <div class="contactUs">
+        <div class="row gy-3">
+          <div class="col-12 col-md-6">
+            <div class="labelInput">First Name</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="First Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="labelInput">Last Name</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="First Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="labelInput">number</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="First Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="labelInput">Email</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="First Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <div class="col-12">
+            <div class="labelInput">Special Request</div>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="col-12">
+            <div class="buttonSend">
+              <button>Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer  -->
+    <div class="container pt-4">
+      <div class="row gy-3 gy-md-5">
+        <div class="col-6 col-md-3 d-flex gap-3 flex-column">
+          <img src="assets/image/Logo le riad 1.svg" alt="" />
+          <div class="foooterOverView">
+            Our luxury boutique hotel in Egypt “Le Riad” is inspired by the
+            surrounding environment and architecture of Beit El Sehemy and its
+            exceptional Ottoman houses. Visit us in Cairo and enjoy a taste of
+            superior Egyptian hospitality.
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="headerFoooter mb-2">contact us</div>
+          <ul class="contactUsLinks d-flex flex-column gap-3">
+            <li class="d-flex gap-1">
+              <i class="fa fa-phone"></i>
+              <div class="content d-flex flex-column gap-1 gap-md-2">
+                <span>02 27876074 </span>
+                <span>02 27876074 </span>
+                <span>02 27876074 </span>
+                <span>02 27876074 </span>
+              </div>
+            </li>
+            <li class="d-flex gap-1">
+              <i class="fa fa-ember"></i>
+              <div class="content d-flex flex-column gap-1">
+                <span>info@leriadcairo.com</span>
+              </div>
+            </li>
+            <li class="d-flex gap-1">
+              <i class="fa fa-location-arrow"></i>
+              <div class="content d-flex flex-column gap-1">
+                114 El Moez Street, El Gamaleya, Cairo, Egypt
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="headerFoooter mb-2">more information</div>
+          <ul class="infoFooter d-flex flex-column gap-2 gap-md-3">
+            <li class="infoLinks">
+              <a> Home</a>
+            </li>
+            <li class="infoLinks">
+              <a> Suites</a>
+            </li>
+            <li class="infoLinks">
+              <a> Dinning</a>
+            </li>
+            <li class="infoLinks">
+              <a> Gallery</a>
+            </li>
+            <li class="infoLinks">
+              <a href="Concierge.html"> Concierge</a>
+            </li>
+            <li class="infoLinks">
+              <a> Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-12">
+          <div class="headerFoooter mb-2">FIND US HERE</div>
+          <ul class="d-flex gap-4">
+            <li><img src="assets/image/Location (1).svg" alt="" /></li>
+            <li><img src="assets/image/Facebook (2).svg" alt="" /></li>
+            <li><img src="assets/image/Instagram (2).svg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <script src="javaScript/main.js"></script>
+  </body>
+</html>

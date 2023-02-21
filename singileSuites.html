@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet"></link>
+    <link rel="stylesheet" href="css/singleSuite.css" />
+    <link rel="stylesheet" href="css/listSuites.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- landing page  -->
+    <div class="landing_page">
+      <div class="w-100 h-100 position-relative">
+        <video
+          class="w-100 h-100 object-fit-cover"
+          src="assets/image/viedo.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+        <div class="singelsuites">
+          <div class="row gy-2 gy-md-3">
+            <div class="startReate d-flex align-items-center gap-md-2">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="suiteName">Belly Dancer Suite</div>
+            <div class="desc">
+              Lorem ipsum dolor sit am-et consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+        </div>
+        <div class="lauoutVideo"></div>
+        <!-- mobile nav -->
+        <div class="mobileNav container-sm mx-auto d-block d-md-none">
+          <div class="row g-">
+            <!-- logo -->
+            <div class="col">
+              <img src="assets/image/Logo white.svg" alt="" />
+            </div>
+            <!-- menu bar -->
+            <div class="col">
+              <div class="menuIcon d-flex justify-content-end">
+                <i class="fa-solid fa-bars text-end show"></i>
+                <i class="fa-solid fa-xmark text-end"></i>
+              </div>
+              <div class="menuBox">
+                <ul class="row">
+                  <li>EN <i class="fa-solid fa-angle-down"></i></li>
+                  <li>Sign in</li>
+                  <li>Register</li>
+                  <li>Home</li>
+                  <li>Suites</li>
+                  <li>Dinning</li>
+                  <li>Gallery</li>
+                  <li>Concierge</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- destop nav -->
+        <div class="desktopNav row d-none d-md-block">
+          <div class="row">
+            <div class="col">
+              <img
+                height="54"
+                widt
+                h="146"
+                class="headerlogo"
+                src="assets/image/Logo white-desktop.svg"
+                alt=""
+              />
+            </div>
+            <div class="col-md-6 col-xl-5">
+              <div class="row gx-5 flex-nowrap">
+                <div class="col linksHeader">EN</div>
+                <div class="col linksHeader">Sing in</div>
+                <div class="col linksHeader">Register</div>
+                <div class="col">
+                  <div class="bookBut">
+                    <button>Book New</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- links desktop -->
+        <div class="linksDesktop w-100 d-none d-md-block">
+          <ul class="d-flex justify-content-center align-items-center gap-4">
+            <li>
+              <a href="/">Home </a>
+              <i class="fa fa-angle-down"></i>
+            </li>
+            <li>
+              <a>Suites </a>
+            </li>
+            <li>
+              <a>Dinning </a>
+            </li>
+            <li>
+              <a>Gallery </a>
+            </li>
+            <li>
+              <a>Concierge</a>
+            </li>
+            <li>
+              <a>Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- check availavility  -->
+    <div class="check_availavility d-block d-md-none">
+      <div class="boxCheck">
+        <!-- date  -->
+        <div class="row dateBox position-relative">
+          <div class="labalBox">Check in - Check out</div>
+          <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+          <i class="fas fa-calendar-alt position-absolute"></i>
+        </div>
+        <!-- room unmber -->
+        <div class="row roomBox position-relative">
+          <div class="labalBox">Rooms</div>
+          <input type="number" placeholder="1 Room" />
+        </div>
+        <!-- adults -->
+        <div class="row roomBox position-relative">
+          <div class="labalBox">Adults</div>
+          <div class="counter d-flex justify-content-around align-items-center">
+            <img
+              onclick="removeCounter('adults')"
+              src="assets/image/Minus Icon.svg"
+              alt=""
+            />
+            <input
+              id="adults"
+              type="text"
+              name="adults"
+              class="form-control input-number book_all"
+              value="0"
+              min="1"
+              max="100"
+              readonly=""
+            />
+            <img
+              onclick="addCounter('adults')"
+              src="assets/image/Plus Icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- children -->
+        <div class="row roomBox position-relative">
+          <div class="labalBox">Adults</div>
+          <div class="counter d-flex justify-content-around align-items-center">
+            <img
+              onclick="removeCounter('Children')"
+              src="assets/image/Minus Icon.svg"
+              alt=""
+            />
+            <input
+              id="Children"
+              type="text"
+              name="adults"
+              class="form-control input-number book_all"
+              value="0"
+              min="1"
+              max="100"
+              readonly=""
+            />
+            <img
+              onclick="addCounter('Children')"
+              src="assets/image/Plus Icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="butCheck">
+        <button>Check Availavility</button>
+      </div>
+    </div>
+    <!-- check acailacility desktop -->
+    <div class="container-sm d-none d-md-block checkSection">
+      <div class="checkDestop">
+        <div class="row d-flex align-items-center">
+          <div class="col-9">
+            <div class="row gap-2">
+              <div class="col-4">
+                <!-- date -->
+                <div class="dateFilter row position-relative">
+                  <div class="labalBox">Check in - Check out</div>
+                  <input
+                    type="text"
+                    name="daterange"
+                    value="01/01/2018 - 01/15/2018"
+                    placeholder="Feb 14 - Feb 20"
+                  />
+                  <i class="fas fa-calendar-alt position-absolute"></i>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row roomBox position-relative">
+                  <div class="labalBox">Rooms</div>
+                  <input type="number" placeholder="1 Room" />
+                </div>
+              </div>
+              <div class="col">
+                <!-- adults -->
+                <div class="row roomBox position-relative">
+                  <div class="labalBox">Adults</div>
+                  <div
+                    class="counter d-flex justify-content-around align-items-center"
+                  >
+                    <img
+                      onclick="removeCounter('adults')"
+                      src="assets/image/Minus Icon.svg"
+                      alt=""
+                    />
+                    <input
+                      id="adults"
+                      type="text"
+                      name="adults"
+                      class="form-control input-number book_all"
+                      value="0"
+                      min="1"
+                      max="100"
+                      readonly=""
+                    />
+                    <img
+                      onclick="addCounter('adults')"
+                      src="assets/image/Plus Icon.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <!-- children -->
+                <div class="row roomBox position-relative">
+                  <div class="labalBox">Adults</div>
+                  <div
+                    class="counter d-flex justify-content-around align-items-center"
+                  >
+                    <img
+                      onclick="removeCounter('Children')"
+                      src="assets/image/Minus Icon.svg"
+                      alt=""
+                    />
+                    <input
+                      id="Children"
+                      type="text"
+                      name="adults"
+                      class="form-control input-number book_all"
+                      value="0"
+                      min="1"
+                      max="100"
+                      readonly=""
+                    />
+                    <img
+                      onclick="addCounter('Children')"
+                      src="assets/image/Plus Icon.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="butcheckAva">
+              <button>Check Availability</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about and gallary -->
+    <div class="container">
+      <div class="row flex-md-row-reverse">
+        <div class="col-12 col-md-6">
+          <div
+            class="aboutSuite position-relative d-flex flex-column gap-3 gap-md-5 align-items-center p-3 p-md-4 justify-content-md-center"
+          >
+            <div class="aboutImage"></div>
+            <div class="headerName">Belly Dancer Suite</div>
+            <div class="desc">
+              The beautiful belly dancer suite comes with a large king-size bed,
+              glitzy decor, and a striking view of a medieval historic mosque.
+              Immerse yourself in the whimsy of the traditional Egyptian dance
+              and fall in love with the romance of it all.
+            </div>
+            <div class="price">$240 per night</div>
+            <div class="buttonCheck">
+              <button>Check Availability</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                              <img src="assets/image/header1.jpg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="assets/image/header2.jpg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="assets/image/header3.jpg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="assets/image/services1.jpg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="assets/image/services2.jpg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="assets/image/services3.jpg" alt="">
+                          </li>
+                      </ul>
+                </div>
+              </section>
+            <section
+                id="thumbnail-carousel"
+                class="splide"
+                aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+                >
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <i class="fa fa-arrow-alt-circle-left"></i>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <i class="fa fa-arrow-alt-circle-right"></i>
+
+                    </button>
+              </div>
+                    <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="assets/image/header1.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="assets/image/header2.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="assets/image/header3.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="assets/image/services1.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="assets/image/services2.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="assets/image/services3.jpg" alt="">
+                                </li>
+                            </ul>
+                    </div>
+            </section>
+        </div>
+      </div>
+    </div>
+    <!-- room services -->
+    <div class="container">
+         <div class="headerSection">
+        <p>room services</p>
+      </div>
+         <div class="d-flex gap-3 flex-wrap justify-content-md-center">
+            <div class="">
+                <div class="servicesBox">
+                    <i class="fa fa-bed-pulse"></i>
+                    <span>
+                      bed   
+                    </span>
+                </div>
+            </div>
+            <div class="">
+                <div class="servicesBox">
+                    <i class="fa fa-shower"></i>
+                    <span>
+                        Shower   
+                    </span>
+                </div>
+            </div>
+            <div class="">
+                <div class="servicesBox">
+                    <i class="fa fa-glass-water"></i>
+                    <span>
+                        Mini bar   
+                    </span>
+                </div>
+            </div>
+            <div class="">
+                <div class="servicesBox">
+                    <i class="fa fa-coffee"></i>
+                    <span>
+                        Tea / Coffee-cup  
+                    </span>
+                </div>
+            </div>
+            <div class="">
+                <div class="servicesBox">
+                    <i class="fa fa-toilet"></i>
+                    <span>
+                        Bathroom   
+                    </span>
+                </div>
+            </div>
+            <div class="">
+                <div class="servicesBox">
+                    <i class="fa fa-network-wired"></i>
+                    <span>
+                        Internet   
+                    </span>
+                </div>
+            </div>
+            <div class="">
+                <div class="servicesBox">
+                    <i class="fa fa-people-roof"></i>
+                    <span>
+                        Balcony   
+                    </span>
+                </div>
+            </div>
+         </div>    
+    </div>
+    <!-- stay connected -->
+    <div class="connected mt-5">
+      <div
+        class="d-flex gap-2 gap-md-3 flex-column justify-content-center align-items-center"
+      >
+        <div class="header">Stay Connected</div>
+        <div class="deco">
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+        </div>
+        <div class="buttonSingIn">
+          <button>SIGN IN</button>
+        </div>
+      </div>
+    </div>
+    <!-- you may like -->
+    <div class="container">
+      <div class="headerSection pb-2">
+        <p>You may like</p>
+      </div>
+
+      <div id="new-product" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center">
+                        <div class="col-12 imageSuite">
+                           <img src="assets/image/services1.jpg" alt="">
+                        </div>
+                         <div class="contentSuite d-flex flex-column gap-2  gap-md-3">
+                          <div class="title">
+                            King Farouq
+                          </div>
+                           <div class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                           </div>
+                           <div class="buttonCheck">
+                            <button>Check Availability</button>
+                          </div>
+                         </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center">
+                    <div class="col-12 imageSuite">
+                       <img src="assets/image/services3.jpg" alt="">
+                    </div>
+                     <div class="contentSuite d-flex flex-column gap-2  gap-md-3">
+                      <div class="title">
+                        King Farouq
+                      </div>
+                       <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                       </div>
+                       <div class="buttonCheck">
+                        <button>Check Availability</button>
+                      </div>
+                     </div>
+              </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center">
+                    <div class="col-12 imageSuite">
+                       <img src="assets/image/services2.jpg" alt="">
+                    </div>
+                     <div class="contentSuite d-flex flex-column gap-2  gap-md-3">
+                      <div class="title">
+                        King Farouq
+                      </div>
+                       <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                       </div>
+                       <div class="buttonCheck">
+                        <button>Check Availability</button>
+                      </div>
+                     </div>
+              </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center">
+                    <div class="col-12 imageSuite">
+                       <img src="assets/image/services1.jpg" alt="">
+                    </div>
+                     <div class="contentSuite d-flex flex-column gap-2  gap-md-3">
+                      <div class="title">
+                        King Farouq
+                      </div>
+                       <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                       </div>
+                       <div class="buttonCheck">
+                        <button>Check Availability</button>
+                      </div>
+                     </div>
+              </div>
+                </li>
+                <li class="splide__slide">  <div class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center">
+                  <div class="col-12 imageSuite">
+                     <img src="assets/image/services3.jpg" alt="">
+                  </div>
+                   <div class="contentSuite d-flex flex-column gap-2  gap-md-3">
+                    <div class="title">
+                      King Farouq
+                    </div>
+                     <div class="desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing
+                     </div>
+                     <div class="buttonCheck">
+                      <button>Check Availability</button>
+                    </div>
+                   </div>
+            </div></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <!-- contact us  -->
+    <div class="container">
+      <div class="headerSection pb-2">
+        <p>Contact Us</p>
+      </div>
+      <div class="contactUs">
+        <div class="row gy-3">
+          <div class="col-12 col-md-6">
+            <div class="labelInput">First Name</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="First Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="labelInput">Last Name</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="First Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="labelInput">number</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="First Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="labelInput">Email</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="First Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <div class="col-12">
+            <div class="labelInput">Special Request</div>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="col-12">
+            <div class="buttonSend">
+              <button>Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer  -->
+    <div class="container pt-4">
+      <div class="row gy-3 gy-md-5">
+        <div class="col-6 col-md-3 d-flex gap-3 flex-column">
+          <img src="assets/image/Logo le riad 1.svg" alt="" />
+          <div class="foooterOverView">
+            Our luxury boutique hotel in Egypt “Le Riad” is inspired by the
+            surrounding environment and architecture of Beit El Sehemy and its
+            exceptional Ottoman houses. Visit us in Cairo and enjoy a taste of
+            superior Egyptian hospitality.
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="headerFoooter mb-2">contact us</div>
+          <ul class="contactUsLinks d-flex flex-column gap-3">
+            <li class="d-flex gap-1">
+              <i class="fa fa-phone"></i>
+              <div class="content d-flex flex-column gap-1 gap-md-2">
+                <span>02 27876074 </span>
+                <span>02 27876074 </span>
+                <span>02 27876074 </span>
+                <span>02 27876074 </span>
+              </div>
+            </li>
+            <li class="d-flex gap-1">
+              <i class="fa fa-ember"></i>
+              <div class="content d-flex flex-column gap-1">
+                <span>info@leriadcairo.com</span>
+              </div>
+            </li>
+            <li class="d-flex gap-1">
+              <i class="fa fa-location-arrow"></i>
+              <div class="content d-flex flex-column gap-1">
+                114 El Moez Street, El Gamaleya, Cairo, Egypt
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="headerFoooter mb-2">more information</div>
+          <ul class="infoFooter d-flex flex-column gap-2 gap-md-3">
+            <li class="infoLinks">
+              <a> Home</a>
+            </li>
+            <li class="infoLinks">
+              <a> Suites</a>
+            </li>
+            <li class="infoLinks">
+              <a> Dinning</a>
+            </li>
+            <li class="infoLinks">
+              <a> Gallery</a>
+            </li>
+            <li class="infoLinks">
+              <a> Concierge</a>
+            </li>
+            <li class="infoLinks">
+              <a> Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-12">
+          <div class="headerFoooter mb-2">FIND US HERE</div>
+          <ul class="d-flex gap-4">
+            <li><img src="assets/image/Location (1).svg" alt="" /></li>
+            <li><img src="assets/image/Facebook (2).svg" alt="" /></li>
+            <li><img src="assets/image/Instagram (2).svg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <script src="javaScript/single.js"></script>
+    <script src="javaScript/main.js"></script>
+  </body>
+</html>

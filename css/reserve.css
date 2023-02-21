@@ -1,0 +1,85 @@
+body {
+  margin: 0 !important;
+}
+.reserveText {
+  position: absolute;
+  top: 35%;
+  left: 10px;
+  width: 330px;
+}
+.reserveText .header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.reserveText .desc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.reserveText .buttonRserve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 120px;
+  height: 40px;
+  background: #ffffff;
+  border: 0.5px solid #3d3d3d;
+  border-radius: 5px;
+}
+.reserveText .buttonRserve button {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.reservSectionHead {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d3d3d;
+}
+@media only screen and (min-width: 768px) {
+  .reserveText .header {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 37px;
+    color: #ffffff;
+  }
+  .reserveText {
+    width: 700px;
+  }
+  .reserveText .desc {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .reserveText .buttonRserve {
+    width: 205px;
+    height: 48px;
+    transition: ease-in 0.3s;
+  }
+  .reserveText .buttonRserve:hover {
+    background-color: #c4a671;
+  }
+  .reserveText .buttonRserve:hover button {
+    color: #ffffff;
+  }
+  .reservSectionHead {
+    font-size: 35px;
+  }
+}

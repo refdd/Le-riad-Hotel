@@ -1,0 +1,203 @@
+body {
+  margin: 0 !important;
+}
+.cardList {
+}
+.cardImag {
+  position: relative;
+}
+.cardImag .heart {
+  position: absolute;
+  top: 9px;
+  left: 11px;
+  font-size: 19px;
+  color: #fff;
+}
+.cardImag img {
+  max-width: 100%;
+  width: 100%;
+  height: 173px;
+  border-radius: 10px 0px 0px 10px;
+  object-fit: cover;
+}
+.contentCard {
+  padding: 10px;
+  border-width: 0.5px 0.5px 0.5px 0px;
+  border-style: solid;
+  border-color: #ababab;
+}
+.contentCard .title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #3d3d3d;
+}
+.contentCard i {
+  font-size: 16px;
+  color: #ffe234;
+}
+.contentCard .desc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.contentCard .desc span {
+  color: #a3a3a3;
+}
+.contentCard .days {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.contentCard .price {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #3d3d3d;
+}
+.contentCard .buttonView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 112px;
+  height: 47px;
+  background: #ffffff;
+  border: 0.5px solid #3d3d3d;
+  border-radius: 8px;
+  transition: all;
+}
+.contentCard .buttonView button {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.connected {
+  background: #fffbf8;
+  padding: 20px;
+}
+.connected .header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.connected .deco {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.connected .buttonSingIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 154px;
+  height: 47px;
+  background: #ffffff;
+  border: 0.5px solid #3d3d3d;
+  border-radius: 8px;
+  transition: all;
+}
+.connected .buttonSingIn button {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+
+@media only screen and (min-width: 900px) {
+  .all_suites {
+    width: 63%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contentCard .buttonView:hover {
+    background-color: #c4a671;
+  }
+  .all_suites {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .contentCard {
+    padding: 20px;
+    border-radius: 0px 30px 30px 0px;
+  }
+  .cardImag img {
+    height: 277px;
+  }
+
+  .contentCard .title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .contentCard .desc {
+    font-size: 18px;
+    line-height: 26px;
+    width: 171px;
+  }
+  .contentCard .days {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .contentCard .price {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .contentCard .buttonView {
+    width: 230.34px;
+    height: 60.39px;
+    border: 1.40449px solid #034c8c;
+  }
+  .connected .header {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .connected .deco {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .connected .buttonSingIn {
+    width: 145px;
+    height: 56px;
+  }
+  .connected .buttonSingIn {
+    width: 145px;
+    height: 56px;
+  }
+  .connected .buttonSingIn:hover {
+    background-color: #c4a671;
+  }
+  .connected .buttonSingIn:hover button {
+    color: #ffffff;
+  }
+}

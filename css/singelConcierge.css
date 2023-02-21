@@ -1,0 +1,114 @@
+body {
+  margin: 0 !important;
+}
+.concergeHeader {
+  position: absolute;
+  top: 70%;
+  left: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+  width: 250px;
+}
+.overview-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d3d3d;
+}
+.feturl {
+  border: 1px solid #ababab;
+  padding: 10px;
+}
+.feturl span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.feturl i {
+  font-size: 16px;
+  color: #3d3d3d;
+}
+.overViewDocs {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify;
+  color: #3d3d3d;
+}
+.overViewDocs span {
+  font-weight: 700;
+}
+.fromConcierge {
+  background: #ffffff;
+  border: 1px solid #ababab;
+}
+.counter input {
+  width: 100% !important;
+  background-color: transparent !important;
+  border: 0;
+}
+.counter {
+  border: 1px solid #e0e0e0;
+}
+.reserveBut {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 154px;
+  height: 47px;
+  background: #ffffff;
+  border: 0.5px solid #3d3d3d;
+  border-radius: 5px;
+}
+.reserveBut button {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+@media only screen and (min-width: 768px) {
+  .concergeHeader {
+    position: absolute;
+    top: 79%;
+    left: 18px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    width: 664px;
+  }
+  .overview-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .feturl span {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .feturl i {
+    font-size: 20px;
+  }
+  .overViewDocs {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
