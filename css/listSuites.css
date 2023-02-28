@@ -79,7 +79,7 @@ body {
   transition: all;
 }
 .contentCard .buttonView button {
-  font-family: "SF Pro Display";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -122,7 +122,7 @@ body {
   transition: all;
 }
 .connected .buttonSingIn button {
-  font-family: "SF Pro Display";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;

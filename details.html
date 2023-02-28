@@ -20,7 +20,16 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
     />
-    <link rel="stylesheet" href="css/singup.css" />
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet"></link>
+    <link rel="stylesheet" href="css/details.css" />
+    <link rel="stylesheet" href="css/results.css" />
+    <link rel="stylesheet" href="css/Concierge.css" />
+    <link rel="stylesheet" href="css/singleSuite.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <title>Document</title>
@@ -29,20 +38,12 @@
     <!-- landing page  -->
     <div class="landing_page">
       <div class="w-100 h-100 position-relative">
-        <video
-          class="w-100 h-100 object-fit-cover"
-          src="assets/image/viedo.mp4"
-          autoplay
-          loop
-          muted
-        ></video>
-        <div class="lauoutVideo"></div>
         <!-- mobile nav -->
         <div class="mobileNav container-sm mx-auto d-block d-md-none">
-          <div class="row g-">
+          <div class="row d-flex align-items-center  pt-3">
             <!-- logo -->
             <div class="col">
-              <img src="assets/image/Logo white.svg" alt="" />
+              <img src="assets/image/Logo le riad 1.svg" alt="" />
             </div>
             <!-- menu bar -->
             <div class="col">
@@ -57,9 +58,9 @@
                   <li>Register</li>
                   <li>Home</li>
                   <li>Suites</li>
-                  <li><a href="reserve.html">Dinning </a></li>
-                  <li><a href="gallery.html"> Gallery</a></li>
-                  <li><a href="Concierge.html"> Concierge</a></li>
+                  <li> <a href="reserve.html">Dinning </a></li>
+                  <li> <a href="gallery.html"> Gallery</a></li>
+                  <li>Concierge</li>
                   <li><a href="listBolg.html">Blog</a></li>
                 </ul>
               </div>
@@ -75,7 +76,7 @@
                 widt
                 h="146"
                 class="headerlogo"
-                src="assets/image/Logo white-desktop.svg"
+                src="assets/image/Logo le riad 1.svg"
                 alt=""
               />
             </div>
@@ -97,11 +98,11 @@
         <div class="linksDesktop w-100 d-none d-md-block">
           <ul class="d-flex justify-content-center align-items-center gap-4">
             <li>
-              <a>Home </a>
+              <a href="/">Home </a>
               <i class="fa fa-angle-down"></i>
             </li>
             <li>
-              <a href="listSuites.html">Suites </a>
+              <a>Suites </a>
             </li>
             <li>
               <a href="reserve.html">Dinning </a>
@@ -110,7 +111,7 @@
               <a href="gallery.html"> Gallery</a>
             </li>
             <li>
-              <a href="Concierge.html"> Concierge</a>
+              <a>Concierge</a>
             </li>
             <li>
               <a href="listBolg.html">Blog</a>
@@ -119,46 +120,63 @@
         </div>
       </div>
     </div>
-    <!-- sign Up section  -->
-    <div class="container">
-      <div class="welcomeText mt-3">Welcome to Le Riad Hotel de Charme</div>
-      <div class="signUpSection p-3 mt-3 mt-md-4">
-        <div class="row gy-3">
-          <!-- frist name  -->
-          <div class="col-12 col-md-6 d-flex flex-column gap-2">
-            <div class="labalsignup">First Name</div>
+
+   
+   <!-- step section -->
+   <div class="container mt-md-5 pt-md-4">
+    <div class="stepHeader"> SELECt ROOM</div>
+    <div class="steps d-flex align-items-center justify-content-center mt-4">
+     <div class="step position-relative "><span class="active">1</span>
+        <div class="stepText position-absolute"> Search Details</div>
+     </div>
+     <div class="linestep"></div>
+     <div class="step position-relative"><span class="active">2</span>
+    <div class="stepText position-absolute"> your details</div>
+
+    </div>
+     <div class="linestep"></div>
+     <div class="step position-relative"><span>3</span>
+    <div class="stepText position-absolute">Confirmation</div>
+     
+    </div>
+    </div>
+   </div>
+<!-- form details  -->
+      <div class="container mt-5 pt-3">
+           <div class="row formDetails  p-2 gy-4 pb-4">
+            <!-- frist name -->
+            <div class="col-12 col-md-6 d-flex flex-column gap-2">
+                <div class="labalsignup">First Name</div>
+                <input
+                  class="form-control form-control-lg"
+                  type="text"
+                  placeholder="first Name"
+                  aria-label=".form-control-lg example"
+                />
+            </div>
+            <!-- last name  -->
+            <div class="col-12 col-md-6 d-flex flex-column gap-2">
+                <div class="labalsignup">last Name</div>
+                <input
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="last  Name"
+                aria-label=".form-control-lg example"
+                />
+            </div>
+                <!-- Email  -->
+          <div class="col-12 d-flex col-md-6 flex-column gap-2">
+            <div class="labalsignup">Email</div>
             <input
               class="form-control form-control-lg"
               type="text"
-              placeholder="first Name"
+              placeholder="Email"
               aria-label=".form-control-lg example"
             />
           </div>
-          <!-- last name  -->
-          <div class="col-12 col-md-6 d-flex flex-column gap-2">
-            <div class="labalsignup">last Name</div>
-            <input
-              class="form-control form-control-lg"
-              type="text"
-              placeholder="last  Name"
-              aria-label=".form-control-lg example"
-            />
-          </div>
-          <!-- countery  -->
-          <div class="col-12 col-md-6 d-flex flex-column gap-2">
-            <div class="labalsignup">country</div>
-            <select
-              class="form-select form-select-lg"
-              aria-label=".form-select-lg example"
-            >
-              <option selected>country</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <!-- code and number -->
-          <div class="col-12 col-md-6 d-flex flex-column gap-2">
+         
+           <!-- code and number -->
+           <div class="col-12 col-md-6 d-flex flex-column gap-2">
             <div class="labalsignup">Phone</div>
             <div class="d-flex align-items-center">
               <select
@@ -180,37 +198,61 @@
               />
             </div>
           </div>
-          <!-- Email  -->
-          <div class="col-12 d-flex flex-column gap-2">
-            <div class="labalsignup">Email</div>
-            <input
-              class="form-control form-control-lg"
-              type="text"
-              placeholder="Email"
-              aria-label=".form-control-lg example"
-            />
+          <div class="labalsignup " style="margin-bottom: -10px;">Optional Info</div>
+             <!-- countery  -->
+          <div class="col-12 col-md-4 d-flex flex-column gap-2">
+            <div class="labalsignup">country</div>
+            <select
+              class="form-select form-select-lg"
+              aria-label=".form-select-lg example"
+            >
+              <option selected>country</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
           </div>
-          <!-- Password  -->
-          <div class="col-12 col-md-6 d-flex flex-column gap-2">
-            <div class="labalsignup">Password</div>
-            <input
-              class="form-control form-control-lg"
-              type="password"
-              placeholder="Password"
-              aria-label=".form-control-lg example"
-            />
-          </div>
-          <!-- Password confirmation  -->
-          <div class="col-12 col-md-6 d-flex flex-column gap-2">
-            <div class="labalsignup">Password Confirmation</div>
-            <input
-              class="form-control form-control-lg"
-              type="password"
-              placeholder="Password Confirmation"
-              aria-label=".form-control-lg example"
-            />
-          </div>
-          <!-- Receive Our Newsletter -->
+               <!-- city  -->
+               <div class="col-12 col-md-4 d-flex flex-column gap-2">
+                <div class="labalsignup">city</div>
+                <input                         
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="city"
+                aria-label=".form-control-lg example"
+                />
+            </div>
+               <!-- zip  -->
+               <div class="col-12 col-md-4 d-flex flex-column gap-2">
+                <div class="labalsignup">zip</div>
+                <input
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="zip"
+                aria-label=".form-control-lg example"
+                />
+            </div>
+               <!-- Approximate Arrival  -->
+               <div class="col-12 col-md-6 d-flex flex-column gap-2">
+                <div class="labalsignup">Approximate Arrival</div>
+                <input
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="12:30"
+                aria-label=".form-control-lg example"
+                />
+            </div>
+               <!-- Approximate Arrival  -->
+               <div class="col-12 col-md-6 d-flex flex-column gap-2">
+                <div class="labalsignup">Approximate Departure</div>
+                <input
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="3:30"
+                aria-label=".form-control-lg example"
+                />
+            </div>
+                 <!-- Add another reservation -->
           <div class="d-flex gap-3 align-content-center">
             <div class="form-check">
               <input
@@ -220,16 +262,52 @@
                 id="flexCheckDefault"
               />
               <label class="form-check-label labalCheck" for="flexCheckDefault">
-                Receive our newsletter
+                Add another reservation
               </label>
             </div>
-          </div>
-          <div class="col-12 loginBut">
-            <button><a href="reserve.html"> Resister</a></button>
-          </div>
-        </div>
+          </div> 
+             <!--Important Reservation Remarks  -->
+             <div class="col-12  d-flex flex-column gap-2">
+                <div class="labalsignup">Important Reservation Remarks</div>
+                <input
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="Your tour requirements"
+                aria-label=".form-control-lg example"
+                />
+            </div>
+            <!-- nots -->
+            <div class="notsFrom" style="margin-bottom: -12px;">
+                *if another guest came on your behalf please enter their name
+            </div>
+                   <!-- Accept the terms and conditions -->
+                <div class="d-flex gap-3 align-content-center">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label labalCheck" for="flexCheckDefault">
+                Accept the terms and conditions
+              </label>
+            </div>
+               </div> 
+               <!-- button Pay -->
+               <div class="buttonPay d-flex align-items-center justify-content-between justify-content-md-start gap-md-5 ">
+                 <div class="payNow">
+                    <button><a href="confirmation.html">
+                      RESERVE & PAY NOW
+                    </a></button>
+                 </div>
+                 <div class="payllatter">
+                    <button><a href=""> PAY LATER</a></button>
+                 </div>
+
+               </div>
+           </div>
       </div>
-    </div>
     <!-- contact us  -->
     <div class="container">
       <div class="headerSection pb-2">
@@ -296,6 +374,7 @@
           <img src="assets/image/Logo le riad 1.svg" alt="" />
         </div>
         <div class="col-6 col-md-3 d-flex gap-3 flex-column">
+         
           <div class="foooterOverView">
             Our luxury boutique hotel in Egypt “Le Riad” is inspired by the
             surrounding environment and architecture of Beit El Sehemy and its
@@ -345,7 +424,7 @@
               <a href="gallery.html"> Gallery</a>
             </li>
             <li class="infoLinks">
-              <a href="Concierge.html"> Concierge</a>
+              <a> Concierge</a>
             </li>
             <li class="infoLinks">
               <a href="listBolg.html">Blog</a>
@@ -377,6 +456,7 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
     ></script>
-    <script src="javaScript/main.js"></script>
+    <script src="javaScript/concierge.js"></script>
+    <!-- <script src="javaScript/main.js"></script> -->
   </body>
 </html>

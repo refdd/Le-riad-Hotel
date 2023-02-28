@@ -1,0 +1,112 @@
+body {
+  margin: 0 !important;
+}
+
+input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #d9d9d9;
+}
+.code_selected {
+  width: 90px;
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.inputCode {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.notsFrom {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.payNow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 159px;
+  height: 47px;
+  background: #ffffff;
+  border: 0.5px solid #3d3d3d;
+  border-radius: 5px;
+}
+.payNow button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.payllatter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 118px;
+  height: 47px;
+  border: 0.5px solid #3d3d3d;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.payllatter button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.formDetails {
+  border: 0.5px solid #d9d9d9;
+}
+@media only screen and (min-width: 768px) {
+  input::placeholder {
+    font-size: 18px;
+  }
+  .formDetails {
+    border: 0.5px solid #d9d9d9;
+    width: 62%;
+    margin: 0 auto;
+  }
+  .payNow {
+    width: 214px;
+    height: 60px;
+  }
+  .payNow:hover {
+    background: #c4a671;
+  }
+  .payNow:hover button {
+    color: #ffffff;
+  }
+  .payNow button {
+    font-size: 17px;
+  }
+  .payllatter {
+    width: 170px;
+    height: 60px;
+  }
+  .payllatter:hover {
+    background: #c4a671;
+  }
+  .payllatter:hover button {
+    color: #ffffff;
+  }
+  .payllatter button {
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,401 @@
+body {
+  margin: 0 !important;
+}
+.stepHeader {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  text-align: center;
+}
+.step {
+}
+
+.step span.active {
+  color: #ffff;
+  background-color: #c4a671;
+}
+.linestep {
+  background-color: #dbdbdb;
+  height: 1px;
+  width: 54px;
+}
+.step span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.stepText {
+  position: absolute !important;
+  /* bottom: -50px; */
+  width: 74px;
+  top: 250%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #3d3d3d;
+}
+.cardSelected .cardimage img {
+  max-width: 100%;
+  width: 100%;
+  height: 137px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+.cardContent {
+  border-radius: 0px 0px 3px 3px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@keyframes bg {
+  0% {
+    background-size: 0 2px, 2px 0, 0 2px, 2px 0;
+  }
+  25% {
+    background-size: 100% 2px, 2px 0, 0 2px, 2px 0;
+  }
+  50% {
+    background-size: 100% 2px, 2px 100%, 0 2px, 2px 0;
+  }
+  75% {
+    background-size: 100% 2px, 2px 100%, 100% 2px, 2px 0;
+  }
+  100% {
+    background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+  }
+}
+
+.borderImage {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.borderImage.open {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #c4a671 100%, #c4a671 100%),
+    linear-gradient(to bottom, #c4a671 100%, #c4a671 100%),
+    linear-gradient(to right, #c4a671 100%, #c4a671 100%),
+    linear-gradient(to bottom, #c4a671 100%, #c4a671 100%);
+  background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+  animation: bg 3s cubic-bezier(0.19, 1, 0.22, 1) 1;
+  border-radius: 3px;
+  z-index: 1;
+  animation-play-state: running;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+}
+.borderImage.close {
+  background-position: 0 0;
+}
+.cardContent .cardLeft .header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d3d3d;
+}
+.cardContent .cardLeft .desc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  width: 199px;
+}
+.cardContent .cardLeft .price {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #c4a671;
+}
+.cardContent .rightCard .perNight {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #3d3d3d;
+}
+.cardContent .rightCard .viewDetalis {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #3a89ff;
+}
+.cardContent .rightCard .seletedBut {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background: #ffffff;
+  border: 0.5px solid #3d3d3d;
+  border-radius: 5px;
+  z-index: 10;
+}
+.cardContent .rightCard .seletedBut.active {
+  background: #c4a671;
+}
+.cardContent .rightCard .seletedBut.active button {
+  color: #ffff;
+}
+.cardContent .rightCard .seletedBut button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.resultBox {
+  border: 1px solid #c4a671;
+  border-radius: 8px;
+}
+.headerResult .name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.headerResult .days {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #7a7a7a;
+}
+.calcResult .priceNignt span:nth-of-type(1),
+.calcResult .nuNight span:nth-of-type(1) {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.calcResult .priceNignt span:nth-of-type(2),
+.calcResult .nuNight span:nth-of-type(2) {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.calcResult .netPrice span:nth-of-type(1),
+.calcResult .total span:nth-of-type(1) {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.calcResult .netPrice span:nth-of-type(2),
+.calcResult .total span:nth-of-type(2) {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.total {
+  border-top: 1px solid #c4a671;
+}
+.buttonNext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  width: 172px;
+  height: 56px;
+  background: #c4a671;
+  border: 1px solid #3d3d3d;
+  border-radius: 5px;
+}
+.buttonNext button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.filterBy,
+.sortBy {
+  border: 1px solid #3d3d3d;
+  border-radius: 5px !important;
+}
+
+.custom-select-icon {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20512%22%20fill%3D%22%232596be%22%3E%3C%21--%21%20Font%20Awesome%20Pro%206.2.0%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%20%28Commercial%20License%29%20Copyright%202022%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M182.6%209.4c-12.5-12.5-32.8-12.5-45.3%200l-96%2096c-12.5%2012.5-12.5%2032.8%200%2045.3s32.8%2012.5%2045.3%200L128%20109.3V402.7L86.6%20361.4c-12.5-12.5-32.8-12.5-45.3%200s-12.5%2032.8%200%2045.3l96%2096c12.5%2012.5%2032.8%2012.5%2045.3%200l96-96c12.5-12.5%2012.5-32.8%200-45.3s-32.8-12.5-45.3%200L192%20402.7V109.3l41.4%2041.4c12.5%2012.5%2032.8%2012.5%2045.3%200s12.5-32.8%200-45.3l-96-96z%22%2F%3E%3C%2Fsvg%3E");
+  background-size: 10px auto;
+}
+.form-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none !important; /* Remove default arrow */
+  background-image: url("../assets/image/selectedArrow.svg"); /* Add custom arrow */
+}
+.form-select.form-control {
+  text-indent: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .stepHeader {
+    font-size: 20px;
+  }
+  .linestep {
+    background-color: #dbdbdb;
+    height: 1px;
+    width: 149px;
+  }
+  .step span {
+    width: 40px;
+    height: 40px;
+  }
+  .step span {
+    font-size: 14px;
+  }
+  .stepText {
+    width: 107px;
+    top: 173%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .cardSelected .cardimage img {
+    height: 199px;
+    border-radius: 20px 0px 0px 20px;
+  }
+  .cardContent {
+    height: 199px;
+    height: 199px;
+    border-radius: 0px 3px 3px 0px;
+  }
+
+  .cardContent .cardLeft .header {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .cardContent .cardLeft .desc {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    width: 276px;
+  }
+  .cardContent .cardLeft .price {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .cardContent .rightCard .perNight {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .cardContent .rightCard .viewDetalis {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #3a89ff;
+  }
+  .cardContent .rightCard .seletedBut {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+    background: #ffffff;
+    border: 0.5px solid #3d3d3d;
+    border-radius: 5px;
+    transition: ease 0.3s;
+  }
+  .cardContent .rightCard .seletedBut:hover {
+    background: #c4a671;
+  }
+  .cardContent .rightCard .seletedBut button {
+    font-size: 18px;
+  }
+  .buttonNext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    width: 268px;
+    height: 56px;
+    background: #c4a671;
+    border: 1px solid #3d3d3d;
+    border-radius: 5px;
+  }
+  .buttonNext button {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .confirSction {
+    width: 60%;
+    margin: 0 auto;
+  }
+}

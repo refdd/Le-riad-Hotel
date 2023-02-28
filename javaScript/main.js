@@ -13,6 +13,8 @@ const buttonChack = document.querySelector(".butCheck");
 const boxCheck = document.querySelector(".check_availavility .boxCheck");
 const linksHeader = document.querySelectorAll(".linksHeader");
 const adults = document.getElementById("adults");
+const adultsDesktop = document.getElementById("adultsDesktop");
+const ChildrenDesktop = document.getElementById("ChildrenDesktop");
 const Children = document.getElementById("Children");
 const imageCard = document.querySelectorAll(".imageCard");
 const cardContent = document.querySelectorAll(".servicesCard .cardcontent");
@@ -61,26 +63,31 @@ buttonChack &&
 function addCounter(type) {
   if (type == "adults") {
     adults.value++;
+    adultsDesktop.value++;
   }
   if (type == "Children") {
     Children.value++;
+    ChildrenDesktop.value++;
   }
 }
 
 function removeCounter(type) {
   if (type == "adults") {
-    if (adults.value == 0) {
+    if (adults.value == 0 || adultsDesktop.value == 0) {
       adults.value = 0;
-      aduitsValue = adults.value;
+      adultsDesktop.value = 0;
     } else {
       adults.value--;
+      adultsDesktop.value--;
     }
   }
   if (type == "Children") {
-    if (Children.value == 0) {
+    if (Children.value == 0 || ChildrenDesktop.value == 0) {
       Children.value = 0;
+      ChildrenDesktop.value = 0;
     } else {
       Children.value--;
+      ChildrenDesktop.value--;
     }
   }
 }

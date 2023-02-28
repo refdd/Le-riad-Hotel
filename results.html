@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet"></link>
+    <link rel="stylesheet" href="css/results.css" />
+    <link rel="stylesheet" href="css/Concierge.css" />
+    <link rel="stylesheet" href="css/singleSuite.css" />
+    <link rel="stylesheet" href="css/listSuites.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- landing page  -->
+    <div class="landing_page">
+      <div class="w-100 h-100 position-relative">
+        <!-- mobile nav -->
+        <div class="mobileNav container-sm mx-auto d-block d-md-none">
+          <div class="row d-flex align-items-center  pt-3">
+            <!-- logo -->
+            <div class="col">
+              <img src="assets/image/Logo le riad 1.svg" alt="" />
+            </div>
+            <!-- menu bar -->
+            <div class="col">
+              <div class="menuIcon d-flex justify-content-end">
+                <i class="fa-solid fa-bars text-end show"></i>
+                <i class="fa-solid fa-xmark text-end"></i>
+              </div>
+              <div class="menuBox">
+                <ul class="row">
+                  <li>EN <i class="fa-solid fa-angle-down"></i></li>
+                  <li>Sign in</li>
+                  <li>Register</li>
+                  <li>Home</li>
+                  <li>Suites</li>
+                  <li><a href="reserve.html">Dinning </a></li>
+                  <li> <a href="gallery.html"> Gallery</a></li>
+                  <li>Concierge</li>
+                  <li><a href="listBolg.html">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- destop nav -->
+        <div class="desktopNav row d-none d-md-block">
+          <div class="row">
+            <div class="col">
+              <img
+                height="54"
+                widt
+                h="146"
+                class="headerlogo"
+                src="assets/image/Logo le riad 1.svg"
+                alt=""
+              />
+            </div>
+            <div class="col-md-6 col-xl-5">
+              <div class="row gx-5 flex-nowrap">
+                <div class="col linksHeader">EN</div>
+                <div class="col linksHeader">Sing in</div>
+                <div class="col linksHeader">Register</div>
+                <div class="col">
+                  <div class="bookBut">
+                    <button>Book New</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- links desktop -->
+        <div class="linksDesktop w-100 d-none d-md-block">
+          <ul class="d-flex justify-content-center align-items-center gap-4">
+            <li>
+              <a href="/">Home </a>
+              <i class="fa fa-angle-down"></i>
+            </li>
+            <li>
+              <a>Suites </a>
+            </li>
+            <li>
+              <a href="reserve.html">Dinning </a>
+            </li>
+            <li>
+              <a href="gallery.html"> Gallery</a>
+            </li>
+            <li>
+              <a>Concierge</a>
+            </li>
+            <li>
+              <a href="listBolg.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+   
+   <!-- step section -->
+   <div class="container mt-md-5 pt-md-4">
+    <div class="stepHeader"> SELECt ROOM</div>
+    <div class="steps d-flex align-items-center justify-content-center mt-4">
+     <div class="step position-relative "><span class="active">1</span>
+        <div class="stepText position-absolute"> Search Details</div>
+     </div>
+     <div class="linestep"></div>
+     <div class="step position-relative"><span>2</span>
+    <div class="stepText position-absolute"> your details</div>
+
+    </div>
+     <div class="linestep"></div>
+     <div class="step position-relative"><span>3</span>
+    <div class="stepText position-absolute">Confirmation</div>
+     
+    </div>
+    </div>
+   </div>
+   <!--  -->
+   <div class="container pt-5"></div>
+
+   <!-- felter and sortby -->
+   <div class="container mt-5">
+    <div class="row mt-4">
+        <div class="col-7 col-md-4">
+          <select class="form-select form-select-lg mb-3 filterBy" aria-label=".form-select-lg example">
+          <option selected>Filter by</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+        <div class="col-5 col-md-3"> 
+          <select class="form-select form-select-lg mb-3 sortBy " aria-label=".form-select-lg example">
+            <option selected>Sort by</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="3">Three</option>
+            <option value="3">Three</option>
+            <option value="3">Three</option>
+            <option value="3">Three</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+    </div>
+   </div>
+   <!-- card selected -->
+   <div class="container  pt-3">
+    <div class="row gy-5">
+        <div class="col-12 col-md-9 ">
+           <div class="row gy-4 gy-md-5">
+            <div class="cardSelected col-12  ">
+              <div class="row gx-0">
+                <div class="col-12 col-md-4 ">
+                    <div class="cardimage">
+                        <img src="assets/image/SuiteGallery.jpg" alt="">
+                    </div>
+                   </div>
+                   <div class="col-12 col-md-8">
+                    <div class="cardContent position-relative p-3 d-flex align-items-center gap-4">
+                        <div class="borderImage close  position-absolute"></div>
+                      <div class="cardLeft d-flex flex-column gap-3">
+                           <div class="header">
+                            Syriana
+                           </div>
+                           <div class="desc">
+                            Le Riad hotel de charme is limited to just 16
+                           </div>
+                           <div class="price">
+                            $2000
+                           </div>
+                      </div>           
+                      <div class="rightCard d-flex flex-column gap-3">
+                           <div class="perNight">Per night $280 </div>
+                           <div class="viewDetalis">
+                            View details
+                           </div>
+                           <div class="seletedBut">
+                            <button> SELECT</button>
+                           </div>
+                      </div>           
+                    </div>
+                   </div>
+              </div>
+            </div>
+            <div class="cardSelected col-12  ">
+              <div class="row gx-0">
+                <div class="col-12 col-md-4 ">
+                    <div class="cardimage">
+                        <img src="assets/image/SuiteGallery.jpg" alt="">
+                    </div>
+                   </div>
+                   <div class="col-12 col-md-8">
+                    <div class="cardContent position-relative p-3 d-flex align-items-center gap-4">
+                        <div class="borderImage close position-absolute"></div>
+                      <div class="cardLeft d-flex flex-column gap-3">
+                           <div class="header">
+                            Syriana
+                           </div>
+                           <div class="desc">
+                            Le Riad hotel de charme is limited to just 16
+                           </div>
+                           <div class="price">
+                            $2000
+                           </div>
+                      </div>           
+                      <div class="rightCard d-flex flex-column gap-3">
+                           <div class="perNight">Per night $280 </div>
+                           <div class="viewDetalis">
+                            View details
+                           </div>
+                           <div class="seletedBut">
+                            <button> SELECT</button>
+                           </div>
+                      </div>           
+                    </div>
+                   </div>
+              </div>
+            </div>
+            <div class="cardSelected col-12 ">
+              <div class="row gx-0">
+                <div class="col-12 col-md-4 ">
+                    <div class="cardimage">
+                        <img src="assets/image/SuiteGallery.jpg" alt="">
+                    </div>
+                   </div>
+                   <div class="col-12 col-md-8">
+                    <div class="cardContent position-relative p-3 d-flex align-items-center gap-4">
+                        <div class="borderImage close position-absolute"></div>
+                      <div class="cardLeft d-flex flex-column gap-3">
+                           <div class="header">
+                            Syriana
+                           </div>
+                           <div class="desc">
+                            Le Riad hotel de charme is limited to just 16
+                           </div>
+                           <div class="price">
+                            $2000
+                           </div>
+                      </div>           
+                      <div class="rightCard d-flex flex-column gap-3">
+                           <div class="perNight">Per night $280 </div>
+                           <div class="viewDetalis">
+                            View details
+                           </div>
+                           <div class="seletedBut">
+                            <button> SELECT</button>
+                           </div>
+                      </div>           
+                    </div>
+                   </div>
+              </div>
+            </div>
+            <div class="cardSelected col-12  ">
+              <div class="row gx-0">
+                <div class="col-12 col-md-4 ">
+                    <div class="cardimage">
+                        <img src="assets/image/SuiteGallery.jpg" alt="">
+                    </div>
+                   </div>
+                   <div class="col-12 col-md-8">
+                    <div class="cardContent position-relative p-3 d-flex align-items-center gap-4">
+                        <div class="borderImage close position-absolute"></div>
+                      <div class="cardLeft d-flex flex-column gap-3">
+                           <div class="header">
+                            Syriana
+                           </div>
+                           <div class="desc">
+                            Le Riad hotel de charme is limited to just 16
+                           </div>
+                           <div class="price">
+                            $2000
+                           </div>
+                      </div>           
+                      <div class="rightCard d-flex flex-column gap-3">
+                           <div class="perNight">Per night $280 </div>
+                           <div class="viewDetalis">
+                            View details
+                           </div>
+                           <div class="seletedBut">
+                            <button> SELECT</button>
+                           </div>
+                      </div>           
+                    </div>
+                   </div>
+              </div>
+            </div>
+            <div class="cardSelected col-12 ">
+              <div class="row gx-0 ">
+                <div class="col-12 col-md-4 ">
+                    <div class="cardimage">
+                        <img src="assets/image/SuiteGallery.jpg" alt="">
+                    </div>
+                   </div>
+                   <div class="col-12 col-md-8">
+                    <div class="cardContent position-relative p-3 d-flex align-items-center gap-4">
+                        <div class="borderImage close position-absolute"></div>
+                      <div class="cardLeft d-flex flex-column gap-3">
+                           <div class="header">
+                            Syriana
+                           </div>
+                           <div class="desc">
+                            Le Riad hotel de charme is limited to just 16
+                           </div>
+                           <div class="price">
+                            $2000
+                           </div>
+                      </div>           
+                      <div class="rightCard d-flex flex-column gap-3">
+                           <div class="perNight">Per night $280 </div>
+                           <div class="viewDetalis">
+                            View details
+                           </div>
+                           <div class="seletedBut">
+                            <button> SELECT</button>
+                           </div>
+                      </div>           
+                    </div>
+                   </div>
+              </div>
+            </div>
+            <div class="cardSelected col-12 ">
+              <div class="row gx-0">
+                <div class="col-12 col-md-4 ">
+                    <div class="cardimage">
+                        <img src="assets/image/SuiteGallery.jpg" alt="">
+                    </div>
+                   </div>
+                   <div class="col-12 col-md-8">
+                    <div class="cardContent position-relative p-3 d-flex align-items-center gap-4">
+                        <div class="borderImage close position-absolute"></div>
+                      <div class="cardLeft d-flex flex-column gap-3">
+                           <div class="header">
+                            Syriana
+                           </div>
+                           <div class="desc">
+                            Le Riad hotel de charme is limited to just 16
+                           </div>
+                           <div class="price">
+                            $2000
+                           </div>
+                      </div>           
+                      <div class="rightCard d-flex flex-column gap-3">
+                           <div class="perNight">Per night $280 </div>
+                           <div class="viewDetalis">
+                            View details
+                           </div>
+                           <div class="seletedBut">
+                            <button> SELECT</button>
+                           </div>
+                      </div>           
+                    </div>
+                   </div>
+              </div>
+            </div>
+            <div class="cardSelected col-12  ">
+              <div class="row gx-0">
+                <div class="col-12 col-md-4 ">
+                    <div class="cardimage">
+                        <img src="assets/image/SuiteGallery.jpg" alt="">
+                    </div>
+                   </div>
+                   <div class="col-12 col-md-8">
+                    <div class="cardContent position-relative p-3 d-flex align-items-center gap-4">
+                        <div class="borderImage close position-absolute"></div>
+                      <div class="cardLeft d-flex flex-column gap-3">
+                           <div class="header">
+                            Syriana
+                           </div>
+                           <div class="desc">
+                            Le Riad hotel de charme is limited to just 16
+                           </div>
+                           <div class="price">
+                            $2000
+                           </div>
+                      </div>           
+                      <div class="rightCard d-flex flex-column gap-3">
+                           <div class="perNight">Per night $280 </div>
+                           <div class="viewDetalis">
+                            View details
+                           </div>
+                           <div class="seletedBut">
+                            <button> SELECT</button>
+                           </div>
+                      </div>           
+                    </div>
+                   </div>
+              </div>
+            </div>
+            <div class="cardSelected col-12  ">
+              <div class="row gx-0">
+                <div class="col-12 col-md-4 ">
+                    <div class="cardimage">
+                        <img src="assets/image/SuiteGallery.jpg" alt="">
+                    </div>
+                   </div>
+                   <div class="col-12 col-md-8">
+                    <div class="cardContent position-relative p-3 d-flex align-items-center gap-4">
+                        <div class="borderImage close position-absolute"></div>
+                      <div class="cardLeft d-flex flex-column gap-3">
+                           <div class="header">
+                            Syriana
+                           </div>
+                           <div class="desc">
+                            Le Riad hotel de charme is limited to just 16
+                           </div>
+                           <div class="price">
+                            $2000
+                           </div>
+                      </div>           
+                      <div class="rightCard d-flex flex-column gap-3">
+                           <div class="perNight">Per night $280 </div>
+                           <div class="viewDetalis">
+                            View details
+                           </div>
+                           <div class="seletedBut">
+                            <button> SELECT</button>
+                           </div>
+                      </div>           
+                    </div>
+                   </div>
+              </div>
+            </div>
+           </div>
+        </div>
+        <div class="col-12 col-md-3 ">
+            <div class="resultContainer d-flex flex-column gap-5 align-items-center">
+                   <div class="resultBox d-flex flex-column gap-4 p-3">
+                      <div class="headerResult">
+                         <div class="name">
+                            Photographic Suite Double 
+                         </div>
+                         <div class="days"> Total Days 3 Days | 2 Nights</div>
+                      </div>
+                      <!-- calc result -->
+                      <div class="calcResult d-flex flex-column gap-1">
+                        <div class="priceNignt d-flex align-items-center justify-content-between">
+                            <span >
+                                Price Per Night  
+                            </span>
+                            <span >
+                                $320
+                            </span>
+                        </div>
+                        <div class="nuNight d-flex align-items-center justify-content-between">
+                            <span >
+                                Number Of Nights 
+                            </span>
+                            <span >
+                                $640
+                            </span>
+                        </div>
+                        <div class="netPrice d-flex align-items-center justify-content-between">
+                            <span >
+                                Net Price
+                            </span>
+                            <span >
+                                2
+                            </span>
+                        </div>
+                        <div class="total pt-3 d-flex align-items-center justify-content-between">
+                            <span >
+                                Total Price 
+                            </span>
+                            <span >
+                                $824.32
+                            </span>
+                        </div>
+                      </div>
+                   </div>
+                   <div class="resultBox d-flex flex-column gap-4 p-3">
+                      <div class="headerResult">
+                         <div class="name">
+                            Photographic Suite Double 
+                         </div>
+                         <div class="days"> Total Days 3 Days | 2 Nights</div>
+                      </div>
+                      <!-- calc result -->
+                      <div class="calcResult d-flex flex-column gap-1">
+                        <div class="priceNignt d-flex align-items-center justify-content-between">
+                            <span >
+                                Price Per Night  
+                            </span>
+                            <span >
+                                $320
+                            </span>
+                        </div>
+                        <div class="nuNight d-flex align-items-center justify-content-between">
+                            <span >
+                                Number Of Nights 
+                            </span>
+                            <span >
+                                $640
+                            </span>
+                        </div>
+                        <div class="netPrice d-flex align-items-center justify-content-between">
+                            <span >
+                                Net Price
+                            </span>
+                            <span >
+                                2
+                            </span>
+                        </div>
+                        <div class="total pt-3 d-flex align-items-center justify-content-between">
+                            <span >
+                                Total Price 
+                            </span>
+                            <span >
+                                $824.32
+                            </span>
+                        </div>
+                      </div>
+                   </div>
+                   <div class="buttonNext">
+                    <button><a href="details.html"> Next</a> </button>
+                   </div>
+            </div>
+           
+        </div>
+    </div>
+   </div>
+    <!-- contact us  -->
+    <div class="container">
+      <div class="headerSection pb-2">
+        <p>Contact Us</p>
+      </div>
+      <div class="contactUs">
+        <div class="row gy-3">
+          <div class="col-12 col-md-6">
+            <div class="labelInput">First Name</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="First Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="labelInput">Last Name</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="First Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="labelInput">number</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="First Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="labelInput">Email</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="First Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <div class="col-12">
+            <div class="labelInput">Special Request</div>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="col-12">
+            <div class="buttonSend">
+              <button>Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer  -->
+    <div class="container pt-4">
+      <div class="row gy-3 gy-md-5">
+        <div class="col-12" style="margin-bottom: -20px">
+          <img src="assets/image/Logo le riad 1.svg" alt="" />
+        </div>
+        <div class="col-6 col-md-3 d-flex gap-3 flex-column">
+         
+          <div class="foooterOverView">
+            Our luxury boutique hotel in Egypt “Le Riad” is inspired by the
+            surrounding environment and architecture of Beit El Sehemy and its
+            exceptional Ottoman houses. Visit us in Cairo and enjoy a taste of
+            superior Egyptian hospitality.
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="headerFoooter mb-2">contact us</div>
+          <ul class="contactUsLinks d-flex flex-column gap-3">
+            <li class="d-flex gap-1">
+              <i class="fa fa-phone"></i>
+              <div class="content d-flex flex-column gap-1 gap-md-2">
+                <span>02 27876074 </span>
+                <span>02 27876074 </span>
+                <span>02 27876074 </span>
+                <span>02 27876074 </span>
+              </div>
+            </li>
+            <li class="d-flex gap-1">
+              <i class="fa fa-ember"></i>
+              <div class="content d-flex flex-column gap-1">
+                <span>info@leriadcairo.com</span>
+              </div>
+            </li>
+            <li class="d-flex gap-1">
+              <i class="fa fa-location-arrow"></i>
+              <div class="content d-flex flex-column gap-1">
+                114 El Moez Street, El Gamaleya, Cairo, Egypt
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="headerFoooter mb-2">more information</div>
+          <ul class="infoFooter d-flex flex-column gap-2 gap-md-3">
+            <li class="infoLinks">
+              <a> Home</a>
+            </li>
+            <li class="infoLinks">
+              <a> Suites</a>
+            </li>
+            <li class="infoLinks">
+              <a href="reserve.html">Dinning </a>
+            </li>
+            <li class="infoLinks">
+              <a href="gallery.html"> Gallery</a>
+            </li>
+            <li class="infoLinks">
+              <a> Concierge</a>
+            </li>
+            <li class="infoLinks">
+              <a href="listBolg.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-12">
+          <div class="headerFoooter mb-2">FIND US HERE</div>
+          <ul class="d-flex gap-4">
+            <li><img src="assets/image/Location (1).svg" alt="" /></li>
+            <li><img src="assets/image/Facebook (2).svg" alt="" /></li>
+            <li><img src="assets/image/Instagram (2).svg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <script src="javaScript/results.js"></script>
+    <!-- <script src="javaScript/main.js"></script> -->
+  </body>
+</html>

@@ -56,10 +56,10 @@
                   <li>Register</li>
                   <li>Home</li>
                   <li>Suites</li>
-                  <li>Dinning</li>
-                  <li>Gallery</li>
+                  <li><a href="reserve.html">Dinning </a></li>
+                  <li><a href="gallery.html"> Gallery</a></li>
                   <li><a href="Concierge.html"> Concierge</a></li>
-                  <li>Blog</li>
+                  <li><a href="listBolg.html">Blog</a></li>
                 </ul>
               </div>
             </div>
@@ -107,16 +107,16 @@
               <a href="listSuites.html">Suites </a>
             </li>
             <li>
-              <a>Dinning </a>
+              <a href="reserve.html">Dinning </a>
             </li>
             <li>
-              <a>Gallery </a>
+              <a href="gallery.html"> Gallery</a>
             </li>
             <li>
               <a href="Concierge.html"> Concierge</a>
             </li>
             <li>
-              <a>Blog</a>
+              <a href="listBolg.html">Blog</a>
             </li>
           </ul>
         </div>
@@ -264,7 +264,7 @@
                       alt=""
                     />
                     <input
-                      id="adults"
+                      id="adultsDesktop"
                       type="text"
                       name="adults"
                       class="form-control input-number book_all"
@@ -284,7 +284,7 @@
               <div class="col">
                 <!-- children -->
                 <div class="row roomBox position-relative">
-                  <div class="labalBox">Adults</div>
+                  <div class="labalBox">children</div>
                   <div
                     class="counter d-flex justify-content-around align-items-center"
                   >
@@ -294,7 +294,7 @@
                       alt=""
                     />
                     <input
-                      id="Children"
+                      id="ChildrenDesktop"
                       type="text"
                       name="adults"
                       class="form-control input-number book_all"
@@ -315,7 +315,7 @@
           </div>
           <div class="col-3">
             <div class="butcheckAva">
-              <button>Check Availability</button>
+              <button><a href="results.html"> Check Availavility </a></button>
             </div>
           </div>
         </div>
@@ -405,23 +405,73 @@
       </div>
     </div>
     <!-- our suites-->
-    <div class="ourSuites mt-5">
-      <div class="container-sm p-3 p-md-4">
-        <div class="row">
-          <div class="col-6 suitesImage">
-            <img src="assets/image/services1.jpg" alt="" />
-          </div>
-          <div class="col-6 border-bottom border-top">
-            <div
-              class="suitesContent d-flex flex-column gap-3 align-items-center justify-content-md-center h-100"
-            >
-              <div class="title mt-2">Our Suites</div>
-              <div class="desc">
-                Le Riad luxury boutique hotel in cairo is inspired by the
-                surrounding environment
+    <div class="container-sm p-3 p-md-4">
+      <div class="ourSuites mt-5">
+        <div class="row gy-4">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6 suitesImage">
+                <img src="assets/image/services1.jpg" alt="" />
               </div>
-              <div class="buttonSuites">
-                <button>Check Availability</button>
+              <div class="col-6 border-bottom border-top">
+                <div
+                  class="suitesContent d-flex flex-column gap-3 align-items-center justify-content-md-center h-100"
+                >
+                  <div class="title mt-2">Our Suites</div>
+                  <div class="desc">
+                    Le Riad luxury boutique hotel in cairo is inspired by the
+                    surrounding environment
+                  </div>
+                  <div class="buttonSuites">
+                    <button>Check Availability</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- zeeyaea -->
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6">
+                <div
+                  class="zeeyaeaContent d-flex flex-column gap-3 align-items-center justify-content-md-center h-100"
+                >
+                  <div class="title mt-2">
+                    Le Riad Hotel de Charme Gallery Photos
+                  </div>
+                  <div class="desc">Zeeyaea</div>
+                  <div class="descTow">Le Riad luxury boutique hotel</div>
+                  <div class="buttonSuites">
+                    <button>EXPLORE MORE</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 suitesImage">
+                <img src="assets/image/services3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- zeeyaea -->
+          <div class="col-12 border-top pt-2">
+            <div class="row">
+              <div class="col-6 col-md-7 p-0">
+                <div class="suitesImage tow">
+                  <img src="assets/image/header1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-6 col-md-5">
+                <div
+                  class="zeeyaeaContent d-flex flex-column gap-3 align-items-center justify-content-md-center h-100"
+                >
+                  <div class="title mt-2">
+                    Le Riad Hotel de Charme Gallery Photos
+                  </div>
+                  <div class="desc">Zeeyaea</div>
+                  <div class="descTow">Le Riad luxury boutique hotel</div>
+                  <div class="buttonSuites">
+                    <button>EXPLORE MORE</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -527,8 +577,10 @@
     <!-- footer  -->
     <div class="container pt-4">
       <div class="row gy-3 gy-md-5">
-        <div class="col-6 col-md-3 d-flex gap-3 flex-column">
+        <div class="col-12" style="margin-bottom: -20px">
           <img src="assets/image/Logo le riad 1.svg" alt="" />
+        </div>
+        <div class="col-6 col-md-3 d-flex gap-3 flex-column">
           <div class="foooterOverView">
             Our luxury boutique hotel in Egypt “Le Riad” is inspired by the
             surrounding environment and architecture of Beit El Sehemy and its
@@ -572,7 +624,7 @@
               <a> Suites</a>
             </li>
             <li class="infoLinks">
-              <a> Dinning</a>
+              <a href="reserve.html">Dinning </a>
             </li>
             <li class="infoLinks">
               <a> Gallery</a>
@@ -581,7 +633,7 @@
               <a href="Concierge.html"> Concierge</a>
             </li>
             <li class="infoLinks">
-              <a> Blog</a>
+              <a href="listBolg.html">Blog</a>
             </li>
           </ul>
         </div>

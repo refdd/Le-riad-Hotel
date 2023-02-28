@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
 /* Start Variables */
 :root {
   --main-color: #10cab7;
@@ -35,9 +37,13 @@ li {
   list-style: none !important;
 }
 body {
-  font-family: "Josefin Sans", sans-serif;
   font-family: "Roboto", sans-serif;
+  font-family: "Charm", cursive;
   overflow-x: hidden;
+}
+.form-select:focus {
+  box-shadow: none !important;
+  border-color: inherit;
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -67,6 +73,9 @@ input::-webkit-inner-spin-button {
 }
 .menuIcon.d-flex.justify-content-end .fa-xmark.show {
   display: block;
+}
+.form-select {
+  font-family: "Roboto";
 }
 .menuBox {
   width: 181px;
@@ -171,6 +180,14 @@ input::-webkit-inner-spin-button {
   background: #fff8f3;
   border-radius: 5px;
 }
+.bookBut button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #3d3d3d;
+}
 .linksDesktop {
   position: absolute;
   top: 95px;
@@ -254,7 +271,7 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 .check_availavility .butCheck button {
-  font-family: "SF Pro Display";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -416,6 +433,7 @@ input::-webkit-inner-spin-button {
   overflow: hidden;
   padding: 0 !important;
   max-height: 0;
+  transition: padding ease-out 0.2s;
 }
 .servicesCard .cardcontent.active {
   -webkit-transition: max-height 1s;
@@ -477,17 +495,20 @@ input::-webkit-inner-spin-button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: #c4a671;
 }
-.suitesImage {
-}
+
 .suitesImage img {
   max-width: 100%;
   width: 100%;
   height: 211px;
   border-radius: 20px;
+  object-fit: cover;
 }
-.suitesContent {
+.suitesImage.tow img {
+  border-radius: 0px 20px 20px 0px;
 }
+
 .suitesContent .title {
   font-family: "Charm";
   font-style: normal;
@@ -522,7 +543,7 @@ input::-webkit-inner-spin-button {
 }
 
 .suitesContent .buttonSuites button {
-  font-family: "SF Pro Display";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -567,7 +588,7 @@ input::-webkit-inner-spin-button {
 }
 
 .concierge_content .buttonExplore button {
-  font-family: "SF Pro Display";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -589,6 +610,7 @@ input::-webkit-inner-spin-button {
   width: 100%;
   height: 100%;
   background-color: #00000030;
+  z-index: 5;
 }
 .conctergeImage .text {
   position: absolute;
@@ -605,6 +627,7 @@ input::-webkit-inner-spin-button {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  z-index: 10;
 }
 .conctergeImage img {
   max-width: 100%;
@@ -651,7 +674,7 @@ input::-webkit-inner-spin-button {
   border-radius: 8px;
 }
 .buttonSend button {
-  font-family: "SF Pro Display";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -711,6 +734,73 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 25px;
   text-align: center;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.labalsignup {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.headerPage {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d3d3d;
+}
+.zeeyaeaContent .title {
+  font-family: "Charm";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.zeeyaeaContent .desc {
+  font-family: "Charm";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.zeeyaeaContent .descTow {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.zeeyaeaContent .buttonSuites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 162px;
+  height: 47px;
+  background: #ffffff;
+  border: 0.5px solid #3d3d3d;
+  border-radius: 5px;
+}
+.zeeyaeaContent .buttonSuites button {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
   text-transform: uppercase;
   color: #3d3d3d;
 }
@@ -955,5 +1045,52 @@ input::-webkit-inner-spin-button {
   .infoFooter .infoLinks {
     font-size: 18px;
     line-height: 21px;
+  }
+  .labalsignup {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .headerPage {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 47px;
+    color: #3d3d3d;
+  }
+  .zeeyaeaContent .title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+  }
+  .zeeyaeaContent .desc {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+  }
+  .zeeyaeaContent .descTow {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .zeeyaeaContent .buttonSuites {
+    width: 319px;
+    height: 56px;
+    transition: all;
+  }
+  .zeeyaeaContent .buttonSuites:hover {
+    width: 319px;
+    height: 56px;
+    background-color: #c4a671;
+  }
+  .zeeyaeaContent .buttonSuites:hover button {
+    color: #ffffff;
+  }
+
+  .zeeyaeaContent .buttonSuites button {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
   }
 }

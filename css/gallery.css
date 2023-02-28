@@ -1,0 +1,78 @@
+body {
+  margin: 0 !important;
+}
+.card_g_img img {
+  max-width: 100%;
+  width: 100%;
+  height: 226px;
+  object-fit: cover;
+}
+.g_content .header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #3d3d3d;
+}
+.g_content .desc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #3d3d3d;
+}
+.g_content .g_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+  height: 47px;
+  background: #ffffff;
+  border: 0.5px solid #3d3d3d;
+  border-radius: 5px;
+}
+.g_content .g_button button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+@media only screen and (min-width: 768px) {
+  .card_g_img img {
+    height: 470px;
+  }
+  .g_content .header {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .g_content .desc {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .g_content .g_button {
+    width: 162px;
+    height: 47px;
+    transition: all;
+  }
+  .g_content .g_button:hover {
+    background-color: #c4a671;
+  }
+  .g_content .g_button:hover button {
+    color: #ffff;
+  }
+  .g_content .g_button button {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 16px;
+  }
+}
