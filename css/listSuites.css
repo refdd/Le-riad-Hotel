@@ -38,6 +38,16 @@ body {
   font-size: 16px;
   color: #ffe234;
 }
+.contentCard .reate {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #3d3d3d;
+}
+
 .contentCard .desc {
   font-family: "Roboto";
   font-style: normal;
@@ -151,6 +161,7 @@ body {
   }
   .cardImag img {
     height: 277px;
+    border-radius: 30px 0px 0px 30px;
   }
 
   .contentCard .title {

@@ -129,13 +129,16 @@ input::-webkit-inner-spin-button {
 .menuBox ul li:hover {
   background: #ffffff00;
 }
+img.headerlogo {
+  margin-left: 11px;
+}
 .lauoutVideo {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 99%;
-  background-color: #000000b3;
+  background-color: #00000075;
 }
 .desktopNav {
   position: absolute;
@@ -160,6 +163,9 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.linksHeader:nth-of-type(1) {
+  font-weight: 700;
 }
 .linksHeader.hover {
   font-family: "Roboto";
@@ -201,6 +207,24 @@ input::-webkit-inner-spin-button {
   line-height: 26px;
   color: #ffffff;
   cursor: pointer;
+  position: relative;
+}
+#myModalId {
+  display: none !important;
+}
+.linksDesktop ul li.active {
+  font-weight: 700;
+}
+
+.linksDesktop ul li.active::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  background-color: #ffffff;
+  width: 100%;
 }
 .linksDesktop ul li:hover {
   color: #ffffffbf;
@@ -392,6 +416,7 @@ input::-webkit-inner-spin-button {
   line-height: 16px;
   text-transform: uppercase;
   color: #3d3d3d;
+  text-align: justify;
 }
 .headerSection {
   display: flex;
@@ -408,6 +433,7 @@ input::-webkit-inner-spin-button {
   text-align: justify;
   text-transform: uppercase;
   color: #3d3d3d;
+  margin: 0;
 }
 .servicesCard {
   border: 1px solid #ababab;
@@ -752,6 +778,7 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 19px;
   color: #3d3d3d;
+  padding: 30px 0;
 }
 .zeeyaeaContent .title {
   font-family: "Charm";
@@ -803,6 +830,10 @@ input::-webkit-inner-spin-button {
   line-height: 17px;
   text-transform: uppercase;
   color: #3d3d3d;
+}
+.logoFooter img {
+  width: 105px;
+  height: 54px;
 }
 @media only screen and (min-width: 768px) {
   .contentHeader {
@@ -909,7 +940,6 @@ input::-webkit-inner-spin-button {
     line-height: 26px;
     text-transform: uppercase;
     color: #3d3d3d;
-    transition: ease-in 0.2s;
   }
   .butcheckAva:hover {
     background: #c4a671;
@@ -937,7 +967,21 @@ input::-webkit-inner-spin-button {
     padding: 0 10px;
   }
   .headerSection {
-    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+  }
+  .headerSection p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    margin: 0;
   }
   .servicesCard .cardcontent {
     -webkit-transition: max-height 1s;
@@ -946,7 +990,7 @@ input::-webkit-inner-spin-button {
     -o-transition: max-height 1s;
     transition: max-height 1s;
     overflow: hidden;
-    padding: 0 !important;
+    padding: 0 0.5rem !important;
     max-height: 0;
   }
   .servicesCard .cardcontent.active {
@@ -956,12 +1000,15 @@ input::-webkit-inner-spin-button {
     -o-transition: max-height 1s;
     transition: max-height 1s;
     overflow: hidden;
-    padding: 0 !important;
+    padding: 0 0.5rem !important;
     max-height: 0;
   }
   .imageCard:hover + .cardcontent {
-    padding: 0.5rem !important;
-    max-height: 250px;
+    max-height: 350px;
+  }
+  .logoFooter img {
+    width: 322px;
+    height: 134px;
   }
   .imageCard img {
     max-width: 100%;
@@ -1055,7 +1102,7 @@ input::-webkit-inner-spin-button {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 40px;
     line-height: 47px;
     color: #3d3d3d;
   }

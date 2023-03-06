@@ -96,6 +96,10 @@ $(function () {
   $('input[name="daterange"]').daterangepicker(
     {
       opens: "left",
+      drops: "up",
+      beforeShow: function (input, obj) {
+        $(input).after($(input).datepicker("widget"));
+      },
     },
     function (start, end, label) {
       console.log(

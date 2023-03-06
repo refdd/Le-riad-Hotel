@@ -83,6 +83,14 @@ body {
   text-transform: uppercase;
   color: #3d3d3d;
 }
+.labal_singin {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
 @media only screen and (min-width: 768px) {
   .concergeHeader {
     position: absolute;
@@ -92,6 +100,24 @@ body {
     font-size: 40px;
     line-height: 47px;
     width: 664px;
+  }
+  .labal_singin {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .reserveBut button {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #3d3d3d;
+  }
+  .reserveBut {
+    width: 196px;
+    height: 56px;
   }
   .overview-title {
     font-weight: 700;

@@ -27,10 +27,10 @@
     />
     <link rel="stylesheet" href="css/gallery.css" />
     <link rel="stylesheet" href="css/Concierge.css" />
-    <link rel="stylesheet" href="css/singleSuite.css" />
     <link rel="stylesheet" href="css/listSuites.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/singleSuite.css" />
     <title>Document</title>
   </head>
   <body>
@@ -41,11 +41,11 @@
         <div class="mobileNav container-sm mx-auto d-block d-md-none">
           <div class="row d-flex align-items-center pt-3">
             <!-- logo -->
-            <div class="col">
+            <div class="col-7">
               <img src="assets/image/Logo le riad 1.svg" alt="" />
             </div>
             <!-- menu bar -->
-            <div class="col">
+            <div class="col-5">
               <div class="menuIcon d-flex justify-content-end">
                 <i class="fa-solid fa-bars text-end show"></i>
                 <i class="fa-solid fa-xmark text-end"></i>
@@ -82,11 +82,11 @@
             <div class="col-md-6 col-xl-5">
               <div class="row gx-5 flex-nowrap">
                 <div class="col linksHeader">EN</div>
-                <div class="col linksHeader">Sing in</div>
+                <div class="col linksHeader">Sign in</div>
                 <div class="col linksHeader">Register</div>
                 <div class="col">
                   <div class="bookBut">
-                    <button>Book New</button>
+                    <button>Book Now</button>
                   </div>
                 </div>
               </div>
@@ -98,7 +98,6 @@
           <ul class="d-flex justify-content-center align-items-center gap-4">
             <li>
               <a href="/">Home </a>
-              <i class="fa fa-angle-down"></i>
             </li>
             <li>
               <a>Suites </a>
@@ -106,7 +105,7 @@
             <li>
               <a href="reserve.html">Dinning </a>
             </li>
-            <li>
+            <li class="active">
               <a href="gallery.html"> Gallery</a>
             </li>
             <li>
@@ -119,10 +118,87 @@
         </div>
       </div>
     </div>
-    <!-- blog list -->
-    <div class="container mt-5">
+    <!-- gallary contaier -->
+
+    <div class="gallary">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="gallarySilder">
+              <section
+                id="gallarySilder"
+                class="splide"
+                aria-label="Beautiful Images"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="assets/image/header1.jpg" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="assets/image/header2.jpg" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="assets/image/header3.jpg" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="assets/image/services1.jpg" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="assets/image/services2.jpg" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="assets/image/services3.jpg" alt="" />
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section
+                id="thumbnail-carousel"
+                class="splide"
+                aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+              >
+                <div class="splide__arrows">
+                  <button class="splide__arrow splide__arrow--prev">
+                    <i class="fa fa-arrow-alt-circle-left"></i>
+                  </button>
+                  <button class="splide__arrow splide__arrow--next">
+                    <i class="fa fa-arrow-alt-circle-right"></i>
+                  </button>
+                </div>
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="assets/image/header1.jpg" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="assets/image/header2.jpg" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="assets/image/header3.jpg" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="assets/image/services1.jpg" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="assets/image/services2.jpg" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="assets/image/services3.jpg" alt="" />
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Gallery -->
+    <div class="container accordion-body mt-4">
       <div class="headerPage">Gallery</div>
-      <div class="row mt-4 gy-4">
+      <div class="row gy-4">
         <div class="col-12">
           <div class="row">
             <div class="col-6">
@@ -219,7 +295,7 @@
     </div>
     <!-- contact us  -->
     <div class="container">
-      <div class="headerSection pb-2">
+      <div class="headerSection">
         <p>Contact Us</p>
       </div>
       <div class="contactUs">
@@ -365,6 +441,7 @@
       src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
     ></script>
     <script src="javaScript/results.js"></script>
+    <script src="javaScript/gallary.js"></script>
     <!-- <script src="javaScript/main.js"></script> -->
   </body>
 </html>

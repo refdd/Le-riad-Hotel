@@ -23,6 +23,15 @@ body {
   color: #3d3d3d;
   cursor: pointer;
 }
+.password::placeholder,
+.Email::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #d9d9d9;
+}
 .loginBut {
   display: flex;
   justify-content: center;
@@ -99,5 +108,14 @@ input::placeholder {
   }
   input::placeholder {
     font-size: 18px;
+  }
+  .passWord::placeholder,
+  .Email::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #d9d9d9;
   }
 }
