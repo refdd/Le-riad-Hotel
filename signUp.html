@@ -26,95 +26,89 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- landing page  -->
-    <div class="landing_page">
-      <div class="w-100 h-100 position-relative">
-        <video
-          class="w-100 h-100 object-fit-cover"
-          src="assets/image/viedo.mp4"
-          autoplay
-          loop
-          muted
-        ></video>
-        <div class="lauoutVideo"></div>
-        <!-- mobile nav -->
-        <div class="mobileNav container-sm mx-auto d-block d-md-none">
-          <div class="row g-">
-            <!-- logo -->
-            <div class="col">
-              <img src="assets/image/Logo white.svg" alt="" />
-            </div>
-            <!-- menu bar -->
-            <div class="col">
-              <div class="menuIcon d-flex justify-content-end">
-                <i class="fa-solid fa-bars text-end show"></i>
-                <i class="fa-solid fa-xmark text-end"></i>
-              </div>
-              <div class="menuBox">
-                <ul class="row">
-                  <li>EN <i class="fa-solid fa-angle-down"></i></li>
-                  <li>Sign in</li>
-                  <li>Register</li>
-                  <li>Home</li>
-                  <li>Suites</li>
-                  <li><a href="reserve.html">Dinning </a></li>
-                  <li><a href="gallery.html"> Gallery</a></li>
-                  <li><a href="Concierge.html"> Concierge</a></li>
-                  <li><a href="listBolg.html">Blog</a></li>
-                </ul>
-              </div>
-            </div>
+    <!-- landing page image -->
+    <div class="landingPageImage position-relative pt-3">
+      <!-- destop nav -->
+      <div class="row d-none d-md-block">
+        <div class="row">
+          <div class="col">
+            <img
+              height="54"
+              widt
+              h="146"
+              class="headerlogo"
+              src="assets/image/Logo white-desktop.svg"
+              alt=""
+            />
           </div>
-        </div>
-        <!-- destop nav -->
-        <div class="desktopNav row d-none d-md-block">
-          <div class="row">
-            <div class="col">
-              <img
-                height="54"
-                widt
-                h="146"
-                class="headerlogo"
-                src="assets/image/Logo white-desktop.svg"
-                alt=""
-              />
-            </div>
-            <div class="col-md-6 col-xl-5">
-              <div class="row gx-5 flex-nowrap">
-                <div class="col linksHeader">EN</div>
-                <div class="col linksHeader">Sign in</div>
-                <div class="col linksHeader">Register</div>
-                <div class="col">
-                  <div class="bookBut">
-                    <button>Book Now</button>
-                  </div>
+          <div class="col-md-6 col-xl-5">
+            <div class="row gx-5 flex-nowrap">
+              <div class="col linksHeader">EN</div>
+              <div class="col linksHeader">
+                <a href="singIn.html">Sing in</a>
+              </div>
+              <div class="col linksHeader">
+                <a href="signUp.html">Register</a>
+              </div>
+              <div class="col">
+                <div class="bookBut">
+                  <button>Book New</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- links desktop -->
-        <div class="linksDesktop w-100 d-none d-md-block">
-          <ul class="d-flex justify-content-center align-items-center gap-4">
-            <li>
-              <a>Home </a>
-            </li>
-            <li>
-              <a href="listSuites.html">Suites </a>
-            </li>
-            <li>
-              <a href="reserve.html">Dinning </a>
-            </li>
-            <li>
-              <a href="gallery.html"> Gallery</a>
-            </li>
-            <li>
-              <a href="Concierge.html"> Concierge</a>
-            </li>
-            <li>
-              <a href="listBolg.html">Blog</a>
-            </li>
-          </ul>
+      </div>
+      <!-- links desktop -->
+      <div class="linksDesktop w-100 d-none d-md-block">
+        <ul class="d-flex justify-content-center align-items-center gap-4">
+          <li>
+            <a>Home </a>
+          </li>
+          <li>
+            <a href="listSuites.html">Suites </a>
+          </li>
+          <li>
+            <a href="reserve.html">Dinning </a>
+          </li>
+          <li>
+            <a href="gallery.html"> Gallery</a>
+          </li>
+          <li>
+            <a href="Concierge.html"> Concierge</a>
+          </li>
+          <li>
+            <a href="listBolg.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <!-- mobile nav -->
+      <div class="container-sm mx-auto d-block d-md-none pt-3">
+        <div class="row g-">
+          <!-- logo -->
+          <div class="col">
+            <img src="assets/image/Logo white.svg" alt="" />
+          </div>
+          <!-- menu bar -->
+          <div class="col">
+            <div class="menuIcon d-flex justify-content-end">
+              <i class="fa-solid fa-bars text-end show"></i>
+              <i class="fa-solid fa-xmark text-end"></i>
+            </div>
+            <div class="menuBox">
+              <ul class="row">
+                <li>EN <i class="fa-solid fa-angle-down"></i></li>
+                <li>Sign in</li>
+                <li>Register</li>
+                <li>Home</li>
+                <li>Suites</li>
+                <li><a href="reserve.html">Dinning </a></li>
+                <li><a href="gallery.html"> Gallery</a></li>
+                <li><a href="Concierge.html"> Concierge</a></li>
+                <li><a href="listBolg.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -161,7 +155,7 @@
             <div class="labalsignup">Phone</div>
             <div class="d-flex align-items-center">
               <select
-                class="form-select code_selected"
+                class="form-select form-select-lg code_selected"
                 aria-label="Default select example"
               >
                 <option selected>code</option>
@@ -172,7 +166,7 @@
                 <option value="3">+80</option>
               </select>
               <input
-                class="form-control inputCode"
+                class="form-control inputCode form-control-lg"
                 type="text"
                 placeholder="Number"
                 aria-label="Name example"

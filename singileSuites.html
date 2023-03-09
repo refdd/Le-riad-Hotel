@@ -20,12 +20,11 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
     />
-    <script src="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-    "></script>
-    <link href="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-    " rel="stylesheet"></link>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/singleSuite.css" />
     <link rel="stylesheet" href="css/listSuites.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -81,7 +80,7 @@
                   <li>Home</li>
                   <li>Suites</li>
                   <li><a href="reserve.html">Dinning </a></li>
-                  <li> <a href="gallery.html"> Gallery</a></li>
+                  <li><a href="gallery.html"> Gallery</a></li>
                   <li>Concierge</li>
                   <li><a href="listBolg.html">Blog</a></li>
                 </ul>
@@ -121,7 +120,6 @@
           <ul class="d-flex justify-content-center align-items-center gap-4">
             <li>
               <a href="/">Home </a>
-          
             </li>
             <li>
               <a>Suites </a>
@@ -229,7 +227,11 @@
                     value="01/01/2018 - 01/15/2018"
                     placeholder="Feb 14 - Feb 20"
                   />
-                  <i class="fas fa-calendar-alt position-absolute"></i>
+                  <img
+                    class="calendar-Icon position-absolute"
+                    src="assets/image/Calendar.svg"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="col">
@@ -308,155 +310,164 @@
         </div>
       </div>
     </div>
-    <!-- about and gallary -->
+    <!-- breadcrumbs -->
     <div class="container">
-      <div class="row flex-md-row-reverse">
-        <div class="col-12 col-md-6">
-          <div
-            class="aboutSuite position-relative d-flex flex-column gap-3 gap-md-5 align-items-center p-3 p-md-4 justify-content-md-center"
-          >
-            <div class="aboutImage"></div>
-            <div class="headerName">Belly Dancer Suite</div>
-            <div class="desc">
-              The beautiful belly dancer suite comes with a large king-size bed,
-              glitzy decor, and a striking view of a medieval historic mosque.
-              Immerse yourself in the whimsy of the traditional Egyptian dance
-              and fall in love with the romance of it all.
-            </div>
-            <div class="price">$240 per night</div>
-            <div class="buttonCheck">
-              <button>Check Availability</button>
-            </div>
+      <div class="row py-3 py-md-4">
+        <div class="col-6">
+          <div class="breadcrumbs d-flex align-items-center gap-2 gap-md-3">
+            <span> Suites</span>
+            <i class="fa fa-angle-right"></i>
+            <span> Belly Dancer Suite </span>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-            <section id="image-carousel" class="splide" aria-label="Beautiful Images">
-                <div class="splide__track">
-                      <ul class="splide__list">
-                          <li class="splide__slide">
-                              <img src="assets/image/header1.jpg" alt="">
-                          </li>
-                          <li class="splide__slide">
-                              <img src="assets/image/header2.jpg" alt="">
-                          </li>
-                          <li class="splide__slide">
-                              <img src="assets/image/header3.jpg" alt="">
-                          </li>
-                          <li class="splide__slide">
-                              <img src="assets/image/services1.jpg" alt="">
-                          </li>
-                          <li class="splide__slide">
-                              <img src="assets/image/services2.jpg" alt="">
-                          </li>
-                          <li class="splide__slide">
-                              <img src="assets/image/services3.jpg" alt="">
-                          </li>
-                      </ul>
-                </div>
-              </section>
-            <section
-                id="thumbnail-carousel"
-                class="splide"
-                aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
-                >
-                <div class="splide__arrows">
-                    <button class="splide__arrow splide__arrow--prev">
-                        <i class="fa fa-arrow-alt-circle-left"></i>
-                    </button>
-                    <button class="splide__arrow splide__arrow--next">
-                        <i class="fa fa-arrow-alt-circle-right"></i>
-
-                    </button>
-              </div>
-                    <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <img src="assets/image/header1.jpg" alt="">
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="assets/image/header2.jpg" alt="">
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="assets/image/header3.jpg" alt="">
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="assets/image/services1.jpg" alt="">
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="assets/image/services2.jpg" alt="">
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="assets/image/services3.jpg" alt="">
-                                </li>
-                            </ul>
-                    </div>
-            </section>
-        </div> 
+        <div class="col-6">
+          <div
+            class="fav_share d-flex justify-content-end align-items-center gap-3 gap-md-4"
+          >
+            <img src="assets/image/Like.svg" alt="" />
+            <img src="assets/image/Share.svg" alt="" />
+          </div>
+        </div>
       </div>
     </div>
+    <!-- about and gallary -->
+
+    <div class="row flex-md-row-reverse gx-md-0">
+      <div class="col-12 col-md-6">
+        <div
+          class="aboutSuite position-relative d-flex flex-column gap-3 gap-md-5 align-items-center p-3 p-md-4 justify-content-md-center"
+        >
+          <div class="aboutImage"></div>
+          <div class="headerName">Belly Dancer Suite</div>
+          <div class="desc">
+            The beautiful belly dancer suite comes with a large king-size bed,
+            glitzy decor, and a striking view of a medieval historic mosque.
+            Immerse yourself in the whimsy of the traditional Egyptian dance and
+            fall in love with the romance of it all.
+          </div>
+          <div class="price">$240 per night</div>
+          <div class="buttonCheck">
+            <button>Check Availability</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <section
+          id="image-carousel"
+          class="splide"
+          aria-label="Beautiful Images"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="assets/image/header1.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/image/header2.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/image/header3.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/image/services1.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/image/services2.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/image/services3.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section
+          id="thumbnail-carousel"
+          class="splide"
+          aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+        >
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+              <i class="fa fa-arrow-alt-circle-left"></i>
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+              <i class="fa fa-arrow-alt-circle-right"></i>
+            </button>
+          </div>
+          <div class="splide__track mx-3">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="assets/image/header1.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/image/header2.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/image/header3.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/image/services1.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/image/services2.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/image/services3.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
     <!-- room services -->
     <div class="container">
-         <div class="headerSection">
+      <div class="headerSection">
         <p>room services</p>
       </div>
-         <div class="d-flex gap-3 flex-wrap justify-content-md-center">
-            <div class="">
-                <div class="servicesBox">
-                    <i class="fa fa-bed-pulse"></i>
-                    <span>
-                      bed   
-                    </span>
-                </div>
-            </div>
-            <div class="">
-                <div class="servicesBox">
-                    <i class="fa fa-shower"></i>
-                    <span>
-                        Shower   
-                    </span>
-                </div>
-            </div>
-            <div class="">
-                <div class="servicesBox">
-                    <i class="fa fa-glass-water"></i>
-                    <span>
-                        Mini bar   
-                    </span>
-                </div>
-            </div>
-            <div class="">
-                <div class="servicesBox">
-                    <i class="fa fa-coffee"></i>
-                    <span>
-                        Tea / Coffee-cup  
-                    </span>
-                </div>
-            </div>
-            <div class="">
-                <div class="servicesBox">
-                    <i class="fa fa-toilet"></i>
-                    <span>
-                        Bathroom   
-                    </span>
-                </div>
-            </div>
-            <div class="">
-                <div class="servicesBox">
-                    <i class="fa fa-network-wired"></i>
-                    <span>
-                        Internet   
-                    </span>
-                </div>
-            </div>
-            <div class="">
-                <div class="servicesBox">
-                    <i class="fa fa-people-roof"></i>
-                    <span>
-                        Balcony   
-                    </span>
-                </div>
-            </div>
-         </div>    
+      <div class="d-flex gap-3 flex-wrap justify-content-md-center">
+        <div class="">
+          <div class="servicesBox">
+            <i class="fa fa-bed-pulse"></i>
+            <span> bed </span>
+          </div>
+        </div>
+        <div class="">
+          <div class="servicesBox">
+            <i class="fa fa-shower"></i>
+            <span> Shower </span>
+          </div>
+        </div>
+        <div class="">
+          <div class="servicesBox">
+            <i class="fa fa-glass-water"></i>
+            <span> Mini bar </span>
+          </div>
+        </div>
+        <div class="">
+          <div class="servicesBox">
+            <i class="fa fa-coffee"></i>
+            <span> Tea / Coffee-cup </span>
+          </div>
+        </div>
+        <div class="">
+          <div class="servicesBox">
+            <i class="fa fa-toilet"></i>
+            <span> Bathroom </span>
+          </div>
+        </div>
+        <div class="">
+          <div class="servicesBox">
+            <i class="fa fa-network-wired"></i>
+            <span> Internet </span>
+          </div>
+        </div>
+        <div class="">
+          <div class="servicesBox">
+            <i class="fa fa-people-roof"></i>
+            <span> Balcony </span>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- stay connected -->
     <div class="connected mt-5">
@@ -478,104 +489,106 @@
         <p>You may like</p>
       </div>
 
-      <div id="new-product" class="splide">
+      <div id="new-product" class="splide pt-3">
         <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">
-                  <div class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center">
-                        <div class="col-12 imageSuite">
-                           <img src="assets/image/services1.jpg" alt="">
-                        </div>
-                         <div class="contentSuite d-flex flex-column gap-2  gap-md-3">
-                          <div class="title">
-                            King Farouq
-                          </div>
-                           <div class="desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                           </div>
-                           <div class="buttonCheck">
-                            <button>Check Availability</button>
-                          </div>
-                         </div>
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div
+                class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center"
+              >
+                <div class="col-12 imageSuite">
+                  <img src="assets/image/services1.jpg" alt="" />
+                </div>
+                <div class="contentSuite d-flex flex-column gap-2 gap-md-3">
+                  <div class="title">King Farouq</div>
+                  <div class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
                   </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center">
-                    <div class="col-12 imageSuite">
-                       <img src="assets/image/services3.jpg" alt="">
-                    </div>
-                     <div class="contentSuite d-flex flex-column gap-2  gap-md-3">
-                      <div class="title">
-                        King Farouq
-                      </div>
-                       <div class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                       </div>
-                       <div class="buttonCheck">
-                        <button>Check Availability</button>
-                      </div>
-                     </div>
-              </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center">
-                    <div class="col-12 imageSuite">
-                       <img src="assets/image/services2.jpg" alt="">
-                    </div>
-                     <div class="contentSuite d-flex flex-column gap-2  gap-md-3">
-                      <div class="title">
-                        King Farouq
-                      </div>
-                       <div class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                       </div>
-                       <div class="buttonCheck">
-                        <button>Check Availability</button>
-                      </div>
-                     </div>
-              </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center">
-                    <div class="col-12 imageSuite">
-                       <img src="assets/image/services1.jpg" alt="">
-                    </div>
-                     <div class="contentSuite d-flex flex-column gap-2  gap-md-3">
-                      <div class="title">
-                        King Farouq
-                      </div>
-                       <div class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                       </div>
-                       <div class="buttonCheck">
-                        <button>Check Availability</button>
-                      </div>
-                     </div>
-              </div>
-                </li>
-                <li class="splide__slide">  <div class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center">
-                  <div class="col-12 imageSuite">
-                     <img src="assets/image/services3.jpg" alt="">
+                  <div class="buttonCheck">
+                    <button>Check Availability</button>
                   </div>
-                   <div class="contentSuite d-flex flex-column gap-2  gap-md-3">
-                    <div class="title">
-                      King Farouq
-                    </div>
-                     <div class="desc">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
-                     </div>
-                     <div class="buttonCheck">
-                      <button>Check Availability</button>
-                    </div>
-                   </div>
-            </div></li>
-            </ul>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div
+                class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center"
+              >
+                <div class="col-12 imageSuite">
+                  <img src="assets/image/services3.jpg" alt="" />
+                </div>
+                <div class="contentSuite d-flex flex-column gap-2 gap-md-3">
+                  <div class="title">King Farouq</div>
+                  <div class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                  </div>
+                  <div class="buttonCheck">
+                    <button>Check Availability</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div
+                class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center"
+              >
+                <div class="col-12 imageSuite">
+                  <img src="assets/image/services2.jpg" alt="" />
+                </div>
+                <div class="contentSuite d-flex flex-column gap-2 gap-md-3">
+                  <div class="title">King Farouq</div>
+                  <div class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                  </div>
+                  <div class="buttonCheck">
+                    <button>Check Availability</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div
+                class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center"
+              >
+                <div class="col-12 imageSuite">
+                  <img src="assets/image/services1.jpg" alt="" />
+                </div>
+                <div class="contentSuite d-flex flex-column gap-2 gap-md-3">
+                  <div class="title">King Farouq</div>
+                  <div class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                  </div>
+                  <div class="buttonCheck">
+                    <button>Check Availability</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div
+                class="sutieCard row d-flex flex-column gap-3 gap-md-4 align-items-center"
+              >
+                <div class="col-12 imageSuite">
+                  <img src="assets/image/services3.jpg" alt="" />
+                </div>
+                <div class="contentSuite d-flex flex-column gap-2 gap-md-3">
+                  <div class="title">King Farouq</div>
+                  <div class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                  </div>
+                  <div class="buttonCheck">
+                    <button>Check Availability</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-    </div>
+      </div>
     </div>
     <!-- contact us  -->
     <div class="container">
-      <div class="headerSection ">
+      <div class="headerSection">
         <p>Contact Us</p>
       </div>
       <div class="contactUs">

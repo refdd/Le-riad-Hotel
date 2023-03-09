@@ -39,22 +39,23 @@ barsMenu &&
     closeIcon.classList.remove("show");
   });
 
-//   hover nav bar
-navDesktop &&
-  navDesktop.addEventListener("mouseover", () => {
-    navDesktop.classList.add("hover");
-    headerlogo.src = `assets/image/Logo le riad 1.svg`;
-    linksHeader.forEach((link) => {
-      link.classList.add("hover");
-    });
-  });
-navDesktop.addEventListener("mouseout", () => {
-  navDesktop.classList.remove("hover");
-  headerlogo.src = `assets/image/Logo white-desktop.svg`;
-  linksHeader.forEach((link) => {
-    link.classList.remove("hover");
-  });
-});
+//   hover nav bar commit now but may work again
+// navDesktop &&
+//   navDesktop.addEventListener("mouseover", () => {
+//     navDesktop.classList.add("hover");
+//     headerlogo.src = `assets/image/Logo le riad 1.svg`;
+//     linksHeader.forEach((link) => {
+//       link.classList.add("hover");
+//     });
+//   });
+// navDesktop.addEventListener("mouseout", () => {
+//   navDesktop.classList.remove("hover");
+//   headerlogo.src = `assets/image/Logo white-desktop.svg`;
+//   linksHeader.forEach((link) => {
+//     link.classList.remove("hover");
+//   });
+// });
+// open and close box check
 buttonChack &&
   buttonChack.addEventListener("click", () => {
     boxCheck.classList.toggle("show");
@@ -63,11 +64,11 @@ buttonChack &&
 function addCounter(type) {
   if (type == "adults") {
     adults.value++;
-    adultsDesktop.value++;
+    adultsDesktop && adultsDesktop.value++;
   }
   if (type == "Children") {
     Children.value++;
-    ChildrenDesktop.value++;
+    ChildrenDesktop && ChildrenDesktop.value++;
   }
 }
 
@@ -78,7 +79,7 @@ function removeCounter(type) {
       adultsDesktop.value = 0;
     } else {
       adults.value--;
-      adultsDesktop.value--;
+      adultsDesktop && adultsDesktop.value--;
     }
   }
   if (type == "Children") {
@@ -87,7 +88,7 @@ function removeCounter(type) {
       ChildrenDesktop.value = 0;
     } else {
       Children.value--;
-      ChildrenDesktop.value--;
+      ChildrenDesktop && ChildrenDesktop.value--;
     }
   }
 }

@@ -26,95 +26,89 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- landing page  -->
-    <div class="landing_page">
-      <div class="w-100 h-100 position-relative">
-        <video
-          class="w-100 h-100 object-fit-cover"
-          src="assets/image/viedo.mp4"
-          autoplay
-          loop
-          muted
-        ></video>
-        <div class="lauoutVideo"></div>
-        <!-- mobile nav -->
-        <div class="mobileNav container-sm mx-auto d-block d-md-none">
-          <div class="row g-">
-            <!-- logo -->
-            <div class="col">
-              <img src="assets/image/Logo white.svg" alt="" />
-            </div>
-            <!-- menu bar -->
-            <div class="col">
-              <div class="menuIcon d-flex justify-content-end">
-                <i class="fa-solid fa-bars text-end show"></i>
-                <i class="fa-solid fa-xmark text-end"></i>
-              </div>
-              <div class="menuBox">
-                <ul class="row">
-                  <li>EN <i class="fa-solid fa-angle-down"></i></li>
-                  <li>Sign in</li>
-                  <li>Register</li>
-                  <li>Home</li>
-                  <li>Suites</li>
-                  <li><a href="reserve.html">Dinning </a></li>
-                  <li><a href="gallery.html"> Gallery</a></li>
-                  <li>Concierge</li>
-                  <li><a href="listBolg.html">Blog</a></li>
-                </ul>
-              </div>
-            </div>
+    <!-- landing page image -->
+    <div class="landingPageImage position-relative pt-3">
+      <!-- destop nav -->
+      <div class="row d-none d-md-block">
+        <div class="row">
+          <div class="col">
+            <img
+              height="54"
+              widt
+              h="146"
+              class="headerlogo"
+              src="assets/image/Logo white-desktop.svg"
+              alt=""
+            />
           </div>
-        </div>
-        <!-- destop nav -->
-        <div class="desktopNav row d-none d-md-block">
-          <div class="row">
-            <div class="col">
-              <img
-                height="54"
-                widt
-                h="146"
-                class="headerlogo"
-                src="assets/image/Logo white-desktop.svg"
-                alt=""
-              />
-            </div>
-            <div class="col-md-6 col-xl-5">
-              <div class="row gx-5 flex-nowrap">
-                <div class="col linksHeader">EN</div>
-                <div class="col linksHeader">Sign in</div>
-                <div class="col linksHeader">Register</div>
-                <div class="col">
-                  <div class="bookBut">
-                    <button>Book Now</button>
-                  </div>
+          <div class="col-md-6 col-xl-5">
+            <div class="row gx-5 flex-nowrap">
+              <div class="col linksHeader">EN</div>
+              <div class="col linksHeader">
+                <a href="singIn.html">Sing in</a>
+              </div>
+              <div class="col linksHeader">
+                <a href="signUp.html">Register</a>
+              </div>
+              <div class="col">
+                <div class="bookBut">
+                  <button>Book New</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- links desktop -->
-        <div class="linksDesktop w-100 d-none d-md-block">
-          <ul class="d-flex justify-content-center align-items-center gap-4">
-            <li>
-              <a>Home </a>
-            </li>
-            <li>
-              <a href="listSuites.html">Suites </a>
-            </li>
-            <li>
-              <a href="reserve.html">Dinning </a>
-            </li>
-            <li>
-              <a href="gallery.html"> Gallery</a>
-            </li>
-            <li>
-              <a>Concierge</a>
-            </li>
-            <li>
-              <a href="listBolg.html">Blog</a>
-            </li>
-          </ul>
+      </div>
+      <!-- links desktop -->
+      <div class="linksDesktop w-100 d-none d-md-block">
+        <ul class="d-flex justify-content-center align-items-center gap-4">
+          <li>
+            <a>Home </a>
+          </li>
+          <li>
+            <a href="listSuites.html">Suites </a>
+          </li>
+          <li>
+            <a href="reserve.html">Dinning </a>
+          </li>
+          <li>
+            <a href="gallery.html"> Gallery</a>
+          </li>
+          <li>
+            <a href="Concierge.html"> Concierge</a>
+          </li>
+          <li>
+            <a href="listBolg.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <!-- mobile nav -->
+      <div class="container-sm mx-auto d-block d-md-none pt-3">
+        <div class="row g-">
+          <!-- logo -->
+          <div class="col">
+            <img src="assets/image/Logo white.svg" alt="" />
+          </div>
+          <!-- menu bar -->
+          <div class="col">
+            <div class="menuIcon d-flex justify-content-end">
+              <i class="fa-solid fa-bars text-end show"></i>
+              <i class="fa-solid fa-xmark text-end"></i>
+            </div>
+            <div class="menuBox">
+              <ul class="row">
+                <li>EN <i class="fa-solid fa-angle-down"></i></li>
+                <li>Sign in</li>
+                <li>Register</li>
+                <li>Home</li>
+                <li>Suites</li>
+                <li><a href="reserve.html">Dinning </a></li>
+                <li><a href="gallery.html"> Gallery</a></li>
+                <li><a href="Concierge.html"> Concierge</a></li>
+                <li><a href="listBolg.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -211,17 +205,18 @@
                 placeholder="PassWord"
                 aria-label=".form-control-lg example"
               />
-              <div class="forgotText mt-1">Forgotten your password?</div>
+              <div class="forgotText mt-2">Forgotten your password?</div>
             </div>
             <div class="col-12 loginBut">
               <button><a href="reserve.html"> Login</a></button>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="SingUpBox py-2 px-3 mt-3">
-        <div class="text">
-          don’t have an account? <span><a href="signUp.html">Sing Up </a></span>
+          <div class="col-12 SingUpBox">
+            <div class="text">
+              don’t have an account?
+              <span><a href="signUp.html">Sing Up </a></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

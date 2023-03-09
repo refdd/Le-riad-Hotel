@@ -130,7 +130,7 @@ input::-webkit-inner-spin-button {
   background: #ffffff00;
 }
 img.headerlogo {
-  margin-left: 11px;
+  margin-left: 40px;
 }
 .lauoutVideo {
   position: absolute;
@@ -150,31 +150,44 @@ img.headerlogo {
   /* background-color: white; */
   cursor: pointer;
 }
-.desktopNav.hover {
+/* .desktopNav.hover {
   background-color: white;
-}
+} */
 .linksHeader {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 26px;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.form-control:focus {
+  border-color: #ced4da;
+  box-shadow: none;
+}
+.form-control::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  color: #d9d9d9 !important;
+  display: none;
+}
 .linksHeader:nth-of-type(1) {
   font-weight: 700;
 }
-.linksHeader.hover {
+/* .linksHeader.hover {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #3d3d3d;
-}
+} */
 .bookBut {
   display: flex;
   align-items: center;
@@ -190,7 +203,7 @@ img.headerlogo {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 23px;
   color: #3d3d3d;
 }
@@ -226,6 +239,16 @@ img.headerlogo {
   background-color: #ffffff;
   width: 100%;
 }
+.linksDesktop ul li.active.b_line::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  background-color: #0c0c0c;
+  width: 100%;
+}
 .linksDesktop ul li:hover {
   color: #ffffffbf;
 }
@@ -233,6 +256,7 @@ img.headerlogo {
   position: absolute;
   top: 111px;
   left: 24px;
+  z-index: 1;
 }
 .contentHeader .title {
   font-family: "Roboto";
@@ -336,6 +360,7 @@ img.headerlogo {
 .roomBox input {
   text-align: center;
 }
+
 .dateBox i.fas.fa-calendar-alt.position-absolute {
   top: 47px;
   left: 281px;
@@ -438,7 +463,7 @@ img.headerlogo {
 .servicesCard {
   border: 1px solid #ababab;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
+  border-radius: 30px;
   overflow: hidden;
 }
 .servicesCard .cardcontent {
@@ -565,6 +590,7 @@ img.headerlogo {
   height: 47px;
   background: #ffffff;
   border: 0.5px solid #3d3d3d;
+  border-radius: 5px;
   transition: all;
 }
 
@@ -611,6 +637,7 @@ img.headerlogo {
   background: #ffffff;
   border: 0.5px solid #3d3d3d;
   transition: all;
+  border-radius: 5px;
 }
 
 .concierge_content .buttonExplore button {
@@ -625,7 +652,7 @@ img.headerlogo {
 .conctergeImage {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .conctergeImage::before {
@@ -718,7 +745,7 @@ img.headerlogo {
 }
 .contactUsLinks i {
   color: #3d3d3d;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .contactUsLinks .content {
@@ -823,7 +850,7 @@ img.headerlogo {
   border-radius: 5px;
 }
 .zeeyaeaContent .buttonSuites button {
-  font-family: "SF Pro Display";
+  font-family: Roboto;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -832,12 +859,21 @@ img.headerlogo {
   color: #3d3d3d;
 }
 .logoFooter img {
+  max-width: 100%;
   width: 105px;
   height: 54px;
 }
+@media only screen and (min-width: 1144px) {
+  .calendar-Icon {
+    width: 46px;
+    height: 90px;
+    top: 21px;
+    left: 257px !important;
+  }
+}
 @media only screen and (min-width: 768px) {
   .contentHeader {
-    top: 337px;
+    top: 224px;
   }
   .contentHeader .title {
     font-weight: 700;
@@ -869,7 +905,7 @@ img.headerlogo {
   .socialIcon {
   }
   .lineSocail {
-    height: 100px;
+    height: 76px;
     width: 1px;
     background-color: white;
   }
@@ -880,7 +916,7 @@ img.headerlogo {
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
-    line-height: 23px;
+    line-height: 45px;
     text-transform: uppercase;
     color: #3d3d3d;
   }
@@ -891,6 +927,16 @@ img.headerlogo {
     border-radius: 5px;
     border-bottom: 0.5px solid #ababab;
     height: 42px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ababab;
+  }
+  .roomBox input {
+    font-size: 16px;
+    color: #ababab;
   }
   .dateFilter input:focus {
     outline: 0;
@@ -907,6 +953,12 @@ img.headerlogo {
     top: 52px;
     left: 181px;
     font-size: 17px;
+  }
+  .calendar-Icon {
+    width: 46px;
+    height: 90px;
+    top: 21px;
+    left: 187px;
   }
   .counter input {
     width: 52px;
@@ -976,7 +1028,7 @@ img.headerlogo {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 22px;
     line-height: 26px;
     text-align: justify;
     text-transform: uppercase;
@@ -984,32 +1036,29 @@ img.headerlogo {
     margin: 0;
   }
   .servicesCard .cardcontent {
-    -webkit-transition: max-height 1s;
-    -moz-transition: max-height 1s;
-    -ms-transition: max-height 1s;
-    -o-transition: max-height 1s;
-    transition: max-height 1s;
+    -webkit-transition: height 1s;
+    -moz-transition: height 1s;
+    -ms-transition: height 1s;
+    -o-transition: height 1s;
+    transition: height 1s;
     overflow: hidden;
     padding: 0 0.5rem !important;
-    max-height: 0;
+    height: 0;
   }
   .servicesCard .cardcontent.active {
-    -webkit-transition: max-height 1s;
-    -moz-transition: max-height 1s;
-    -ms-transition: max-height 1s;
-    -o-transition: max-height 1s;
-    transition: max-height 1s;
+    -webkit-transition: height 1s;
+    -moz-transition: height 1s;
+    -ms-transition: height 1s;
+    -o-transition: height 1s;
+    transition: height 1s;
     overflow: hidden;
     padding: 0 0.5rem !important;
-    max-height: 0;
+    height: 0;
   }
   .imageCard:hover + .cardcontent {
-    max-height: 350px;
+    height: 250px;
   }
-  .logoFooter img {
-    width: 322px;
-    height: 134px;
-  }
+
   .imageCard img {
     max-width: 100%;
     width: 100%;
@@ -1036,7 +1085,9 @@ img.headerlogo {
     height: 56px;
   }
   .suitesContent .buttonSuites button {
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
   }
   .suitesContent .buttonSuites:hover {
     background: #c4a671;
@@ -1139,5 +1190,23 @@ img.headerlogo {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
+  }
+  .logoFooter img {
+    max-width: 100%;
+    width: 322px;
+    height: 134px;
+  }
+  .concierge_content .buttonExplore button {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .form-control::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    line-height: 21px !important;
+    color: #d9d9d9 !important;
   }
 }

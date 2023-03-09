@@ -106,7 +106,7 @@
             <li>
               <a href="listSuites.html">Suites </a>
             </li>
-            <li>
+            <li class="active">
               <a href="reserve.html">Dinning </a>
             </li>
             <li>
@@ -122,7 +122,7 @@
         </div>
 
         <!-- content conferm  -->
-        <div class="reserveText d-flex flex-column gap-3 gap-md-4">
+        <div class="reserveText d-flex flex-column gap-md-3 gap-2 gap-md-4">
           <div class="header">ZEEYARA Roof Top Restaurant</div>
           <div class="desc">
             Surrounded by the exquisite Islamic architecture of Khan el-Khalili
@@ -139,6 +139,154 @@
     <!-- layout -->
     <div class="container">
       <div class="reservSectionHead text-center mt-3">resevation form</div>
+    </div>
+    <!-- from resevation  -->
+
+    <div class="container">
+      <div class="fromResevation">
+        <div class="row gy-3 px-3 py-2">
+          <!-- frist name -->
+          <div class="col-12 col-md-6 d-flex flex-column gap-2">
+            <div class="labalsignup">First Name</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="first Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <!-- last name  -->
+          <div class="col-12 col-md-6 d-flex flex-column gap-2">
+            <div class="labalsignup">last Name</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="last  Name"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <!-- Email  -->
+          <div class="col-12 d-flex col-md-6 flex-column gap-2">
+            <div class="labalsignup">Email</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="Email"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <!-- Number -->
+          <div class="col-12 d-flex col-md-6 flex-column gap-2">
+            <div class="labalsignup">number</div>
+            <input
+              class="form-control form-control-lg"
+              type="number"
+              placeholder="number"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <!-- date -->
+          <div class="col-12 d-flex col-md-6 flex-column gap-2">
+            <div class="labalsignup">Date</div>
+            <input
+              class="form-control form-control-lg dateReserve"
+              type="text"
+              name="daterangeReserve"
+              value="01/01/2018 - 01/15/2018"
+            />
+          </div>
+          <!-- time -->
+          <div class="col-12 d-flex col-md-6 flex-column gap-2">
+            <div class="labalsignup">Time</div>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="12:30"
+              aria-label=".form-control-lg example"
+            />
+          </div>
+          <!-- counter -->
+          <div class="col-12">
+            <div class="row gx-1">
+              <!-- adults -->
+              <div
+                class="roomBox position-relative col-6 d-flex flex-column gap-2"
+              >
+                <div class="labalsignup">Adults</div>
+                <div
+                  class="counter d-flex justify-content-around align-items-center"
+                >
+                  <img
+                    onclick="removeCounter('adults')"
+                    src="assets/image/Minus Icon.svg"
+                    alt=""
+                  />
+                  <input
+                    id="adults"
+                    type="text"
+                    name="adults"
+                    class="form-control input-number book_all adults"
+                    value="0"
+                    min="1"
+                    max="100"
+                    readonly=""
+                  />
+                  <img
+                    onclick="addCounter('adults')"
+                    src="assets/image/Plus Icon.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- children -->
+              <div
+                class="roomBox position-relative col-6 d-flex flex-column gap-2"
+              >
+                <div class="labalsignup">Adults</div>
+                <div
+                  class="counter d-flex justify-content-around align-items-center"
+                >
+                  <img
+                    onclick="removeCounter('Children')"
+                    src="assets/image/Minus Icon.svg"
+                    alt=""
+                  />
+                  <input
+                    id="Children"
+                    type="text"
+                    name="adults"
+                    class="form-control input-number book_all"
+                    value="0"
+                    min="1"
+                    max="100"
+                    readonly=""
+                  />
+                  <img
+                    onclick="addCounter('Children')"
+                    src="assets/image/Plus Icon.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- special Reuest -->
+          <div class="col-12 d-flex flex-column gap-2">
+            <div class="labalsignup">Special Request</div>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <!-- button reserve -->
+          <div class="col-12">
+            <div class="reserveBut">
+              <button>RESERVE</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- contact us  -->
     <div class="container">
@@ -287,6 +435,7 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
     ></script>
+    <script src="javaScript/reserve.js"></script>
     <script src="javaScript/main.js"></script>
   </body>
 </html>

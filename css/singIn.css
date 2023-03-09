@@ -53,8 +53,6 @@ body {
   color: #ffffff;
 }
 .SingUpBox {
-  background: #ffffff;
-  border: 0.5px solid #ababab;
   cursor: pointer;
 }
 .SingUpBox .text {
@@ -77,14 +75,24 @@ input::placeholder {
   line-height: 16px;
   color: #d9d9d9;
 }
+.landingPageImage {
+  background-image: url("../assets/image/header2.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 90px;
+}
 @media only screen and (min-width: 768px) {
   .singinSection {
     width: 47%;
     margin: 0 auto;
   }
+  .landingPageImage {
+    background-image: url(../assets/image/header2.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 178px;
+  }
   .SingUpBox {
-    width: 47%;
-    margin: 0 auto;
   }
   .labal_singin {
     font-weight: 700;
@@ -117,5 +125,14 @@ input::placeholder {
     font-size: 18px;
     line-height: 21px;
     color: #d9d9d9;
+  }
+  .loginBut button {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
   }
 }

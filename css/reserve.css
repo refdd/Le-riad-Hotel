@@ -51,21 +51,89 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #3d3d3d;
+  padding: 40px 0;
+}
+.fromResevation {
+  background: #ffffff;
+  border: 1px solid #c6c6c6;
+  border-radius: 10px;
+}
+.dateReserve {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #d9d9d9;
+}
+.reserveBut {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 154px;
+  height: 47px;
+  background: #ffffff;
+  border: 0.5px solid #3d3d3d;
+  border-radius: 5px;
+}
+.reserveBut button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.counter {
+  border: 0.5px solid #ababab;
+}
+.counter input {
+  width: 70px !important;
 }
 @media only screen and (min-width: 768px) {
   .reserveText .header {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 40px;
     line-height: 37px;
     color: #ffffff;
   }
+  .reserveBut button {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #3d3d3d;
+  }
+  .fromResevation {
+    width: 58%;
+    margin: 0 auto;
+  }
+  .reserveBut {
+    width: 196px;
+    height: 56px;
+  }
+  .dateReserve {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #d9d9d9;
+  }
   .reserveText {
     width: 700px;
+    left: 40px;
   }
   .reserveText .desc {
-    font-size: 30px;
+    font-size: 22px;
     line-height: 40px;
   }
   .reserveText .buttonRserve {
@@ -81,5 +149,10 @@ body {
   }
   .reservSectionHead {
     font-size: 35px;
+  }
+  .reserveText .buttonRserve button {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
   }
 }

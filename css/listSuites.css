@@ -8,9 +8,9 @@ body {
 }
 .cardImag .heart {
   position: absolute;
-  top: 9px;
-  left: 11px;
-  font-size: 19px;
+  top: 24px;
+  left: 24px;
+  font-size: 26px;
   color: #fff;
 }
 .cardImag img {
@@ -150,6 +150,9 @@ body {
 @media only screen and (min-width: 768px) {
   .contentCard .buttonView:hover {
     background-color: #c4a671;
+  }
+  .contentCard .buttonView:hover button {
+    color: #ffffff;
   }
   .all_suites {
     width: 70%;

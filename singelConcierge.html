@@ -28,122 +28,114 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- landing page  -->
-    <div class="landing_page">
-      <div class="w-100 h-100 position-relative">
-        <video
-          class="w-100 h-100 object-fit-cover"
-          src="assets/image/viedo.mp4"
-          autoplay
-          loop
-          muted
-        ></video>
-        <div class="lauoutVideo"></div>
-        <!-- mobile nav -->
-        <div class="mobileNav container-sm mx-auto d-block d-md-none">
-          <div class="row g-">
-            <!-- logo -->
-            <div class="col">
-              <img src="assets/image/Logo white.svg" alt="" />
-            </div>
-            <!-- menu bar -->
-            <div class="col">
-              <div class="menuIcon d-flex justify-content-end">
-                <i class="fa-solid fa-bars text-end show"></i>
-                <i class="fa-solid fa-xmark text-end"></i>
-              </div>
-              <div class="menuBox">
-                <ul class="row">
-                  <li>EN <i class="fa-solid fa-angle-down"></i></li>
-                  <li>Sign in</li>
-                  <li>Register</li>
-                  <li>Home</li>
-                  <li>Suites</li>
-                  <li><a href="reserve.html">Dinning </a></li>
-                  <li><a href="gallery.html"> Gallery</a></li>
-                  <li>Concierge</li>
-                  <li><a href="listBolg.html">Blog</a></li>
-                </ul>
-              </div>
-            </div>
+    <!-- landing page image -->
+    <div class="landingPageImage position-relative pt-3">
+      <!-- destop nav -->
+      <div class="row d-none d-md-block">
+        <div class="row">
+          <div class="col">
+            <img
+              height="54"
+              widt
+              h="146"
+              class="headerlogo"
+              src="assets/image/Logo white-desktop.svg"
+              alt=""
+            />
           </div>
-        </div>
-        <!-- destop nav -->
-        <div class="desktopNav row d-none d-md-block">
-          <div class="row">
-            <div class="col">
-              <img
-                height="54"
-                widt
-                h="146"
-                class="headerlogo"
-                src="assets/image/Logo white-desktop.svg"
-                alt=""
-              />
-            </div>
-            <div class="col-md-6 col-xl-5">
-              <div class="row gx-5 flex-nowrap">
-                <div class="col linksHeader">EN</div>
-                <div class="col linksHeader">Sign in</div>
-                <div class="col linksHeader">Register</div>
-                <div class="col">
-                  <div class="bookBut">
-                    <button>Book Now</button>
-                  </div>
+          <div class="col-md-6 col-xl-5">
+            <div class="row gx-5 flex-nowrap">
+              <div class="col linksHeader">EN</div>
+              <div class="col linksHeader">
+                <a href="singIn.html">Sing in</a>
+              </div>
+              <div class="col linksHeader">
+                <a href="signUp.html">Register</a>
+              </div>
+              <div class="col">
+                <div class="bookBut">
+                  <button>Book New</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- links desktop -->
-        <div class="linksDesktop w-100 d-none d-md-block">
-          <ul class="d-flex justify-content-center align-items-center gap-4">
-            <li>
-              <a href="/">Home </a>
-            </li>
-            <li>
-              <a>Suites </a>
-            </li>
-            <li>
-              <a href="reserve.html">Dinning </a>
-            </li>
-            <li>
-              <a href="gallery.html"> Gallery</a>
-            </li>
-            <li>
-              <a>Concierge</a>
-            </li>
-            <li>
-              <a href="listBolg.html">Blog</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="concergeHeader">
-          Islamic Cairo Tour: Architectural Heritage in Bab
+      </div>
+      <!-- links desktop -->
+      <div class="linksDesktop w-100 d-none d-md-block">
+        <ul class="d-flex justify-content-center align-items-center gap-4">
+          <li>
+            <a>Home </a>
+          </li>
+          <li>
+            <a href="listSuites.html">Suites </a>
+          </li>
+          <li class="active">
+            <a href="reserve.html">Dinning </a>
+          </li>
+          <li>
+            <a href="gallery.html"> Gallery</a>
+          </li>
+          <li>
+            <a href="Concierge.html"> Concierge</a>
+          </li>
+          <li>
+            <a href="listBolg.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <!-- mobile nav -->
+      <div class="container-sm mx-auto d-block d-md-none pt-3">
+        <div class="row g-">
+          <!-- logo -->
+          <div class="col">
+            <img src="assets/image/Logo white.svg" alt="" />
+          </div>
+          <!-- menu bar -->
+          <div class="col">
+            <div class="menuIcon d-flex justify-content-end">
+              <i class="fa-solid fa-bars text-end show"></i>
+              <i class="fa-solid fa-xmark text-end"></i>
+            </div>
+            <div class="menuBox">
+              <ul class="row">
+                <li>EN <i class="fa-solid fa-angle-down"></i></li>
+                <li>Sign in</li>
+                <li>Register</li>
+                <li>Home</li>
+                <li>Suites</li>
+                <li><a href="reserve.html">Dinning </a></li>
+                <li><a href="gallery.html"> Gallery</a></li>
+                <li><a href="Concierge.html"> Concierge</a></li>
+                <li><a href="listBolg.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="contnetHeaderSingelConcierge">
+        Islamic Cairo Tour: Architectural Heritage in Bab
+      </div>
     </div>
-
     <!-- overview  -->
     <div class="container">
       <div class="overview-title my-3">Overview</div>
       <div class="row px-3 px-md-0 gx-5">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-7">
           <div class="row gap-3 px-2 mb-3">
-            <div class="feturl col d-flex gap-2 align-items-center">
+            <div class="feturl col d-flex gap-3 align-items-center">
               <i class="fas fa-hourglass"></i>
               <span>About 6 Hours</span>
             </div>
-            <div class="feturl col d-flex gap-2 align-items-center">
+            <div class="feturl col d-flex gap-3 align-items-center">
               <i class="fa fa-cloud"></i>
               <span> cairo </span>
             </div>
-            <div class="feturl col-12 d-flex gap-2 align-items-center">
+            <div class="feturl col-12 d-flex gap-3 align-items-center">
               <i class="fa fa-hand-dots"></i>
               <span>Private Tour</span>
             </div>
-            <div class="feturl col-12 d-flex gap-2 align-items-center">
+            <div class="feturl col-12 d-flex gap-3 align-items-center">
               <i class="fa fa-flag"></i>
               <span>Everday except Frii & Sat and all Official vacations</span>
             </div>
@@ -188,7 +180,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-5">
           <div class="fromConcierge p-2 row gy-3 py-3 mt-3 mt-md-0">
             <!-- frist name  -->
             <div class="col-12 d-flex flex-column gap-2">
@@ -234,10 +226,10 @@
             </div>
             <!-- counter -->
             <div
-              class="col-12 d-flex gap-5 justify-content-center align-items-center"
+              class="col-12 d-flex gap-4 justify-content-center align-items-center"
             >
               <!-- adults -->
-              <div class="row roomBox position-relative">
+              <div class="roomBox position-relative">
                 <div class="labal_singin">Adults</div>
                 <div
                   class="counter d-flex justify-content-around align-items-center"
@@ -265,7 +257,7 @@
                 </div>
               </div>
               <!-- children -->
-              <div class="row roomBox position-relative">
+              <div class="roomBox position-relative">
                 <div class="labal_singin">Adults</div>
                 <div
                   class="counter d-flex justify-content-around align-items-center"

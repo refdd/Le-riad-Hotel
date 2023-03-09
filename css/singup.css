@@ -14,7 +14,7 @@ body {
   color: #3d3d3d;
 }
 .code_selected {
-  width: 90px;
+  width: 102px;
   border-right: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -59,9 +59,21 @@ input::placeholder {
   line-height: 16px;
   color: #d9d9d9;
 }
+.landingPageImage {
+  background-image: url("../assets/image/header2.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 90px;
+}
 @media only screen and (min-width: 768px) {
   .loginBut {
     transition: ease-in 0.3s;
+  }
+  .landingPageImage {
+    background-image: url(../assets/image/header2.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 178px;
   }
   .loginBut:hover {
     transform: scale(0.9);

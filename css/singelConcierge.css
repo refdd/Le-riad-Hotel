@@ -13,6 +13,26 @@ body {
   color: #ffffff;
   width: 250px;
 }
+.landingPageImage {
+  background-image: url("../assets/image/header2.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 250px;
+}
+.contnetHeaderSingelConcierge {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  width: 243px;
+}
 .overview-title {
   font-family: "Roboto";
   font-style: normal;
@@ -23,7 +43,8 @@ body {
 }
 .feturl {
   border: 1px solid #ababab;
-  padding: 10px;
+  padding: 10px 0 0 20px;
+  height: 66px;
 }
 .feturl span {
   font-family: "Roboto";
@@ -52,6 +73,7 @@ body {
 .fromConcierge {
   background: #ffffff;
   border: 1px solid #ababab;
+  border-radius: 5px;
 }
 .counter input {
   width: 100% !important;
@@ -101,23 +123,28 @@ body {
     line-height: 47px;
     width: 664px;
   }
+  .landingPageImage {
+    background-image: url(../assets/image/header2.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 425px;
+  }
+  .contnetHeaderSingelConcierge {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    width: 600px;
+  }
   .labal_singin {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
   }
-  .reserveBut button {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #3d3d3d;
-  }
-  .reserveBut {
-    width: 196px;
-    height: 56px;
+
+  .linksDesktop {
+    position: unset !important;
+    top: 95px;
+    z-index: 16;
   }
   .overview-title {
     font-weight: 700;

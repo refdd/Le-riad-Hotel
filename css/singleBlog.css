@@ -58,9 +58,12 @@ body {
   }
   .s-b-imgText {
     top: 177px;
+    width: 420px;
   }
   .s-b-imgText span {
+    font-weight: 700;
     font-size: 22px;
+    line-height: 26px;
   }
   .s-b-MainText {
     font-size: 22px;
