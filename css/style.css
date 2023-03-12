@@ -403,7 +403,7 @@ img.headerlogo {
   cursor: pointer;
 }
 .checkDestop {
-  padding: 30px 30px;
+  padding: 20px 50px;
   background: #f1f1f1;
 }
 .counter {
@@ -466,36 +466,7 @@ img.headerlogo {
   border-radius: 30px;
   overflow: hidden;
 }
-.servicesCard .cardcontent {
-  -webkit-transition: max-height 1s;
-  -moz-transition: max-height 1s;
-  -ms-transition: max-height 1s;
-  -o-transition: max-height 1s;
-  transition: max-height 1s;
-  overflow: hidden;
-  max-height: 0;
-}
-.servicesCard .cardcontent {
-  -webkit-transition: max-height 1s;
-  -moz-transition: max-height 1s;
-  -ms-transition: max-height 1s;
-  -o-transition: max-height 1s;
-  transition: max-height 1s;
-  overflow: hidden;
-  padding: 0 !important;
-  max-height: 0;
-  transition: padding ease-out 0.2s;
-}
-.servicesCard .cardcontent.active {
-  -webkit-transition: max-height 1s;
-  -moz-transition: max-height 1s;
-  -ms-transition: max-height 1s;
-  -o-transition: max-height 1s;
-  transition: max-height 1s;
-  overflow: hidden;
-  padding: 0.5rem !important;
-  max-height: 250px;
-}
+
 .servicesCard .cardcontent span {
   font-family: "Roboto";
   font-style: normal;
@@ -863,21 +834,44 @@ img.headerlogo {
   width: 105px;
   height: 54px;
 }
+@media only screen and (max-width: 768px) {
+  .servicesCard .cardcontent {
+    -webkit-transition: height 1s;
+    -moz-transition: height 1s;
+    -ms-transition: height 1s;
+    -o-transition: height 1s;
+    transition: height 1s;
+    overflow: hidden;
+    padding: 0 0.5rem !important;
+    max-height: 0;
+  }
+  .servicesCard .cardcontent.active {
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
+    overflow: hidden;
+    padding: 0.5rem !important;
+    max-height: 250px;
+  }
+}
 @media only screen and (min-width: 1144px) {
   .calendar-Icon {
     width: 46px;
     height: 90px;
     top: 21px;
-    left: 257px !important;
+    left: 215px !important;
   }
 }
 @media only screen and (min-width: 768px) {
   .contentHeader {
     top: 224px;
+    left: 50px;
   }
   .contentHeader .title {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 60px;
     line-height: 59px;
   }
   .contentHeader .desc {
@@ -902,6 +896,7 @@ img.headerlogo {
     line-height: 35px;
     color: #ffffff;
   }
+
   .socialIcon {
   }
   .lineSocail {
@@ -1045,16 +1040,7 @@ img.headerlogo {
     padding: 0 0.5rem !important;
     height: 0;
   }
-  .servicesCard .cardcontent.active {
-    -webkit-transition: height 1s;
-    -moz-transition: height 1s;
-    -ms-transition: height 1s;
-    -o-transition: height 1s;
-    transition: height 1s;
-    overflow: hidden;
-    padding: 0 0.5rem !important;
-    height: 0;
-  }
+
   .imageCard:hover + .cardcontent {
     height: 250px;
   }

@@ -43,7 +43,7 @@ barsMenu &&
 // navDesktop &&
 //   navDesktop.addEventListener("mouseover", () => {
 //     navDesktop.classList.add("hover");
-//     headerlogo.src = `assets/image/Logo le riad 1.svg`;
+//     headerlogo.src = `assets/image/le.svg`;
 //     linksHeader.forEach((link) => {
 //       link.classList.add("hover");
 //     });

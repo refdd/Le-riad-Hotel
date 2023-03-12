@@ -59,7 +59,7 @@ input::placeholder {
   line-height: 16px;
   color: #d9d9d9;
 }
-.landingPageImage {
+.landingPageImagesignUp {
   background-image: url("../assets/image/header2.jpg");
   background-position: center center;
   background-size: cover;
@@ -69,7 +69,7 @@ input::placeholder {
   .loginBut {
     transition: ease-in 0.3s;
   }
-  .landingPageImage {
+  .landingPageImagesignUp {
     background-image: url(../assets/image/header2.jpg);
     background-position: center center;
     background-size: cover;

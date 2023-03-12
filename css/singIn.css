@@ -8,10 +8,12 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #3d3d3d;
+  text-transform: capitalize;
 }
 .singinSection {
   background: #ffffff;
   border: 0.5px solid #ababab;
+  border-radius: 5px;
 }
 .forgotText {
   font-family: "Roboto";
@@ -66,6 +68,8 @@ body {
 }
 .SingUpBox .text span {
   color: #c4a671;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 input::placeholder {
   font-family: "Roboto";
@@ -75,7 +79,7 @@ input::placeholder {
   line-height: 16px;
   color: #d9d9d9;
 }
-.landingPageImage {
+.landingPageImageSignIN {
   background-image: url("../assets/image/header2.jpg");
   background-position: center center;
   background-size: cover;
@@ -86,7 +90,7 @@ input::placeholder {
     width: 47%;
     margin: 0 auto;
   }
-  .landingPageImage {
+  .landingPageImageSignIN {
     background-image: url(../assets/image/header2.jpg);
     background-position: center center;
     background-size: cover;

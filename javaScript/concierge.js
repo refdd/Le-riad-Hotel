@@ -22,7 +22,7 @@ barsMenu &&
 
 document.addEventListener("DOMContentLoaded", function () {
   new Splide("#new-product", {
-    perPage: 3,
+    perPage: 2,
     perMove: 1,
     gap: "30px",
     breakpoints: {

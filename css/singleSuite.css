@@ -91,13 +91,13 @@ body {
 }
 .splide__arrow--next {
   right: 1em;
-  top: -113px;
+  top: -234px;
   font-size: 19px;
   color: #ffff;
 }
 .splide__arrow--prev {
   left: 1em;
-  top: -113px;
+  top: -234px;
   font-size: 19px;
   color: #ffff;
 }
@@ -209,6 +209,7 @@ body {
   }
   .singelsuites {
     width: 40%;
+    left: 50px;
   }
   .singelsuites .startReate {
     font-size: 20px;
