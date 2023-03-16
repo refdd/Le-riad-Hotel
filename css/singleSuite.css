@@ -79,6 +79,8 @@ body {
   z-index: 2;
 }
 .buttonCheck button {
+  font-family: "Roboto";
+
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -91,13 +93,13 @@ body {
 }
 .splide__arrow--next {
   right: 1em;
-  top: -234px;
+  top: -120px;
   font-size: 19px;
   color: #ffff;
 }
 .splide__arrow--prev {
   left: 1em;
-  top: -234px;
+  top: -120px;
   font-size: 19px;
   color: #ffff;
 }
@@ -165,9 +167,7 @@ body {
 #new-product .splide__arrow {
   display: none;
 }
-#new-product .splide__list {
-  padding: 0 20% 0 0 !important;
-}
+
 .breadcrumbs {
 }
 .breadcrumbs span:nth-of-type(1) {
@@ -197,6 +197,9 @@ body {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
+  }
+  #new-product .splide__list {
+    padding: 0 20% 0 0 !important;
   }
   .breadcrumbs i {
     color: #3d3d3d;
@@ -296,5 +299,17 @@ body {
   }
   .sutieCard .imageSuite img {
     height: 400px;
+  }
+  .splide__arrow--next {
+    right: 1em;
+    top: -257px;
+    font-size: 19px;
+    color: #ffff;
+  }
+  .splide__arrow--prev {
+    left: 1em;
+    top: -257px;
+    font-size: 19px;
+    color: #ffff;
   }
 }

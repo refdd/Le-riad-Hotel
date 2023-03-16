@@ -196,8 +196,9 @@ img.headerlogo {
   gap: 10px;
   width: 120px;
   height: 51px;
-  background: #fff8f3;
+  background: #525b3b;
   border-radius: 5px;
+  box-shadow: rgba(184, 181, 181, 0.35) 0px 5px 15px;
 }
 .bookBut button {
   font-family: "Roboto";
@@ -205,7 +206,7 @@ img.headerlogo {
   font-weight: 700;
   font-size: 17px;
   line-height: 23px;
-  color: #3d3d3d;
+  color: #fff;
 }
 .linksDesktop {
   position: absolute;
@@ -346,7 +347,7 @@ img.headerlogo {
   max-height: 0;
 }
 .check_availavility .boxCheck.show {
-  max-height: 400px;
+  max-height: 600px;
   padding: 20px;
   border: 1px solid #ababab;
 }
@@ -387,7 +388,7 @@ img.headerlogo {
   line-height: 19px;
   text-transform: uppercase;
   color: #3d3d3d;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .counter input {
   width: 180px;
@@ -428,7 +429,7 @@ img.headerlogo {
   font-family: "Charm";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
   text-align: center;
   text-transform: uppercase;
   color: #3d3d3d;
@@ -441,13 +442,12 @@ img.headerlogo {
   line-height: 16px;
   text-transform: uppercase;
   color: #3d3d3d;
-  text-align: justify;
 }
 .headerSection {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
+  padding: 16px 0px;
 }
 .headerSection p {
   font-family: "Roboto";
@@ -555,9 +555,9 @@ img.headerlogo {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0;
   gap: 10px;
-  width: 162px;
+  width: 100%;
   height: 47px;
   background: #ffffff;
   border: 0.5px solid #3d3d3d;
@@ -623,7 +623,7 @@ img.headerlogo {
 .conctergeImage {
   position: relative;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .conctergeImage::before {
@@ -776,7 +776,10 @@ img.headerlogo {
   font-size: 16px;
   line-height: 19px;
   color: #3d3d3d;
-  padding: 30px 0;
+  padding: 16px 0;
+}
+.z-index {
+  z-index: 5;
 }
 .zeeyaeaContent .title {
   font-family: "Charm";
@@ -854,6 +857,11 @@ img.headerlogo {
     overflow: hidden;
     padding: 0.5rem !important;
     max-height: 250px;
+  }
+  .logoNVideo img {
+    max-width: 100%;
+    width: 70px;
+    height: 30px;
   }
 }
 @media only screen and (min-width: 1144px) {
@@ -974,7 +982,7 @@ img.headerlogo {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ffffff;
+    background: #525b3b;
     padding: 15px 0px;
     border: 1px solid #3d3d3d;
     border-radius: 5px;
@@ -986,7 +994,7 @@ img.headerlogo {
     font-size: 20px;
     line-height: 26px;
     text-transform: uppercase;
-    color: #3d3d3d;
+    color: #fff;
   }
   .butcheckAva:hover {
     background: #c4a671;
@@ -1012,6 +1020,7 @@ img.headerlogo {
     text-transform: uppercase;
     color: #3d3d3d;
     padding: 0 10px;
+    text-align: justify;
   }
   .headerSection {
     display: flex;
@@ -1148,6 +1157,7 @@ img.headerlogo {
     font-size: 40px;
     line-height: 47px;
     color: #3d3d3d;
+    padding: 30px 0;
   }
   .zeeyaeaContent .title {
     font-weight: 700;
@@ -1200,5 +1210,10 @@ img.headerlogo {
     font-size: 18px !important;
     line-height: 21px !important;
     color: #d9d9d9 !important;
+  }
+  .conctergeImage {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
   }
 }

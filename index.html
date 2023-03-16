@@ -45,7 +45,7 @@
             </div>
             <!-- menu bar -->
             <div class="col">
-              <div class="menuIcon d-flex justify-content-end">
+              <div class="menuIcon d-flex justify-content-end me-3">
                 <i class="fa-solid fa-bars text-end show"></i>
                 <i class="fa-solid fa-xmark text-end"></i>
               </div>
@@ -155,67 +155,85 @@
     <!-- check availavility  -->
     <div class="check_availavility d-block d-md-none">
       <div class="boxCheck">
-        <!-- date  -->
-        <div class="row dateBox position-relative">
-          <div class="labalBox">Check in - Check out</div>
-          <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
-          <i class="fas fa-calendar-alt position-absolute"></i>
-        </div>
-        <!-- room unmber -->
-        <div class="row roomBox position-relative">
-          <div class="labalBox">Rooms</div>
-          <input type="number" placeholder="1 Room" />
-        </div>
-        <!-- adults -->
-        <div class="row roomBox position-relative">
-          <div class="labalBox">Adults</div>
-          <div class="counter d-flex justify-content-around align-items-center">
-            <img
-              onclick="removeCounter('adults')"
-              src="assets/image/Minus Icon.svg"
-              alt=""
-            />
-            <input
-              id="adults"
-              type="text"
-              name="adults"
-              class="form-control input-number book_all"
-              value="0"
-              min="1"
-              max="100"
-              readonly=""
-            />
-            <img
-              onclick="addCounter('adults')"
-              src="assets/image/Plus Icon.svg"
-              alt=""
-            />
+        <div class="row gy-3">
+          <div class="col-12">
+            <!-- date  -->
+            <div class="row dateBox position-relative">
+              <div class="labalBox">Check in - Check out</div>
+              <input
+                type="text"
+                name="daterange"
+                value="01/01/2018 - 01/15/2018"
+              />
+              <i class="fas fa-calendar-alt position-absolute"></i>
+            </div>
           </div>
-        </div>
-        <!-- children -->
-        <div class="row roomBox position-relative">
-          <div class="labalBox">Adults</div>
-          <div class="counter d-flex justify-content-around align-items-center">
-            <img
-              onclick="removeCounter('Children')"
-              src="assets/image/Minus Icon.svg"
-              alt=""
-            />
-            <input
-              id="Children"
-              type="text"
-              name="adults"
-              class="form-control input-number book_all"
-              value="0"
-              min="1"
-              max="100"
-              readonly=""
-            />
-            <img
-              onclick="addCounter('Children')"
-              src="assets/image/Plus Icon.svg"
-              alt=""
-            />
+          <div class="col-12">
+            <!-- room unmber -->
+            <div class="row roomBox position-relative">
+              <div class="labalBox">Rooms</div>
+              <input type="number" placeholder="1 Room" />
+            </div>
+          </div>
+          <div class="col-12">
+            <!-- adults -->
+            <div class="row roomBox position-relative">
+              <div class="labalBox">Adults</div>
+              <div
+                class="counter d-flex justify-content-around align-items-center"
+              >
+                <img
+                  onclick="removeCounter('adults')"
+                  src="assets/image/Minus Icon.svg"
+                  alt=""
+                />
+                <input
+                  id="adults"
+                  type="text"
+                  name="adults"
+                  class="form-control input-number book_all"
+                  value="0"
+                  min="1"
+                  max="100"
+                  readonly=""
+                />
+                <img
+                  onclick="addCounter('adults')"
+                  src="assets/image/Plus Icon.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <!-- children -->
+            <div class="row roomBox position-relative">
+              <div class="labalBox">Adults</div>
+              <div
+                class="counter d-flex justify-content-around align-items-center"
+              >
+                <img
+                  onclick="removeCounter('Children')"
+                  src="assets/image/Minus Icon.svg"
+                  alt=""
+                />
+                <input
+                  id="Children"
+                  type="text"
+                  name="adults"
+                  class="form-control input-number book_all"
+                  value="0"
+                  min="1"
+                  max="100"
+                  readonly=""
+                />
+                <img
+                  onclick="addCounter('Children')"
+                  src="assets/image/Plus Icon.svg"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -328,7 +346,7 @@
         <img src="assets/image/header2.jpg" alt="" />
       </div>
       <div
-        class="col-6 px-md-3 px-1 d-flex flex-column gap-2 align-items-center justify-content-md-center pe-5"
+        class="col-6 px-md-3 px-1 d-flex flex-column gap-2 align-items-center justify-content-md-center pe-3"
       >
         <h3 class="welcomeTitle">Welcome to Le Riad Hotel de Charme</h3>
         <div class="welcomeDesc">

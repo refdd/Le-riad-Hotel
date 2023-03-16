@@ -147,6 +147,12 @@ body {
     margin: 0 auto;
   }
 }
+@media only screen and (max-width: 768px) {
+  .contentCard {
+    height: 173px;
+    overflow: hidden;
+  }
+}
 @media only screen and (min-width: 768px) {
   .contentCard .buttonView:hover {
     background-color: #c4a671;

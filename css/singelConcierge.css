@@ -32,6 +32,7 @@ body {
   align-items: center;
   color: #ffffff;
   width: 243px;
+  z-index: 5;
 }
 .overview-title {
   font-family: "Roboto";
