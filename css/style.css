@@ -180,14 +180,6 @@ img.headerlogo {
 .linksHeader:nth-of-type(1) {
   font-weight: 700;
 }
-/* .linksHeader.hover {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  color: #3d3d3d;
-} */
 .bookBut {
   display: flex;
   align-items: center;
@@ -837,6 +829,51 @@ img.headerlogo {
   width: 105px;
   height: 54px;
 }
+.userAccount span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d3d3d;
+}
+.userAccount i {
+  font-size: 20px;
+  color: #3d3d3d;
+}
+.userAccount .userControl {
+  background: #ffffff;
+  border: 0.5px solid #ababab;
+  width: 100%;
+  bottom: -138.3px;
+  border-top: none;
+  border-bottom: none;
+  z-index: 20;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+}
+.userAccount .userControl.active {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 300ms;
+}
+.userAccount .userControl li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d3d3d;
+}
+.form-control {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d3d3d;
+}
 @media only screen and (max-width: 768px) {
   .servicesCard .cardcontent {
     -webkit-transition: height 1s;
@@ -887,6 +924,11 @@ img.headerlogo {
     font-size: 22px;
     line-height: 26px;
     width: 400px;
+  }
+  .form-control {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
   }
   .shearDesktop {
     position: absolute;

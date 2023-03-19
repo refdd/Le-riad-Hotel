@@ -11,6 +11,8 @@ const navDesktop = document.querySelector(".desktopNav");
 const headerlogo = document.querySelector(".headerlogo");
 const buttonChack = document.querySelector(".butCheck");
 const boxCheck = document.querySelector(".check_availavility .boxCheck");
+const userAccount = document.querySelector(".userAccount");
+const userControl = document.querySelector(".userAccount .userControl");
 const linksHeader = document.querySelectorAll(".linksHeader");
 const adults = document.getElementById("adults");
 const adultsDesktop = document.getElementById("adultsDesktop");
@@ -20,6 +22,12 @@ const imageCard = document.querySelectorAll(".imageCard");
 const cardContent = document.querySelectorAll(".servicesCard .cardcontent");
 
 // event
+
+// open and close user box
+userAccount &&
+  userAccount.addEventListener("click", () => {
+    userControl.classList.toggle("active");
+  });
 imageCard &&
   imageCard.forEach((item, index) => {
     item.addEventListener("click", () => {
