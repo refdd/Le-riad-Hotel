@@ -36,8 +36,8 @@ function toggleScroll() {
   }
   userMobileBox.classList.toggle("show");
 }
-Account.addEventListener("click", toggleScroll);
-overlay.addEventListener("click", toggleScroll);
+Account && Account.addEventListener("click", toggleScroll);
+overlay && overlay.addEventListener("click", toggleScroll);
 // open and close user box
 userAccount &&
   userAccount.addEventListener("click", () => {
