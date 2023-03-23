@@ -874,6 +874,40 @@ img.headerlogo {
   line-height: 19px;
   color: #3d3d3d;
 }
+/* overlay user */
+.overlayUser {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 25%);
+  z-index: 0;
+  display: none;
+}
+.userMobileBox {
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  transform: translate(-59%, -50%);
+  z-index: 1000;
+  display: none;
+}
+.userMobileBox.show {
+  display: block;
+}
+.userMobileBox .box {
+  background: #ffffff;
+  border: 0.5px solid #ababab;
+}
+.userMobileBox .box li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d3d3d;
+}
 @media only screen and (max-width: 768px) {
   .servicesCard .cardcontent {
     -webkit-transition: height 1s;

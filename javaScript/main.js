@@ -12,17 +12,32 @@ const headerlogo = document.querySelector(".headerlogo");
 const buttonChack = document.querySelector(".butCheck");
 const boxCheck = document.querySelector(".check_availavility .boxCheck");
 const userAccount = document.querySelector(".userAccount");
+const overlay = document.querySelector(".overlayUser ");
 const userControl = document.querySelector(".userAccount .userControl");
+const userMobileBox = document.querySelector(".userMobileBox");
 const linksHeader = document.querySelectorAll(".linksHeader");
 const adults = document.getElementById("adults");
 const adultsDesktop = document.getElementById("adultsDesktop");
+const Account = document.getElementById("Account");
 const ChildrenDesktop = document.getElementById("ChildrenDesktop");
 const Children = document.getElementById("Children");
 const imageCard = document.querySelectorAll(".imageCard");
 const cardContent = document.querySelectorAll(".servicesCard .cardcontent");
 
 // event
-
+// open and close user box in mobile mode
+function toggleScroll() {
+  if (document.body.style.overflow === "hidden") {
+    document.body.style.overflow = "auto";
+    overlay.style.display = "none";
+  } else {
+    document.body.style.overflow = "hidden";
+    overlay.style.display = "block";
+  }
+  userMobileBox.classList.toggle("show");
+}
+Account.addEventListener("click", toggleScroll);
+overlay.addEventListener("click", toggleScroll);
 // open and close user box
 userAccount &&
   userAccount.addEventListener("click", () => {
